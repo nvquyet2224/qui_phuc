@@ -3,26 +3,23 @@
 
 const checkedData = new Map();
 const elements = {
-    productList: document.getElementById("products-list"),
-    navigation: document.getElementById("products-navigation"),
-    notFound: document.getElementById("products-notfound"),
-    deleteFilter: document.getElementById("delete-filter"),
-    btnReset: document.getElementById("btn-reset"),
-    btnApply: document.getElementById("btn-apply"),
-    btnOpen: document.getElementById("open-filter"),
-    btnClose: document.getElementById("btn-close-filter"),
+    result: document.getElementById("filterResult"),
+    paging: document.getElementById("filterPaging"),
+    empty: document.getElementById("filterEmpty"),
+    deleteFilter: document.getElementById("filterDelete"),
+    btnReset: document.getElementById("filterReset"),
+    btnApply: document.getElementById("filterApply"),
     elmFilter: document.getElementById("filter__accordion"),
-    accordionHeaders: document.querySelectorAll(".accordion__header"),
-    tags: document.querySelector(".head-tags"),
+    tags: document.getElementById("filterTag"),
     accordionBody: document.querySelector(".accordion__body"),
-    amount: document.getElementById("amount"),
+    amount: document.getElementById("filterAmount"),
 };
 
 // Ẩn/hiện thông báo không tìm thấy sản phẩm
 const toggleNotFound = (show) => {
-    elements.productList.classList.toggle("hide", show);
-    elements.navigation.classList.toggle("hide", show);
-    elements.notFound.classList.toggle("hide", !show);
+    elements.result.classList.toggle("hide", show);
+    elements.paging.classList.toggle("hide", show);
+    elements.empty.classList.toggle("hide", !show);
     if (show) {
         elements.amount.innerHTML = "0 sản phẩm";
     } else {
@@ -83,56 +80,16 @@ const initPriceSlider = () => {
 
 // Ẩn bộ lọc
 const hideFilter = () => {
-    elements.elmFilter.classList.remove("show");
-    $("body").removeClass("noScroll");
+    elements.elmFilter.classList.remove("open");
+    document.querySelector('body').classList.remove('no-scroll');
 };
 
 // Xử lý sự kiện nút lọc
 const handleFilterEvents = () => {
-    if (elements.btnOpen && elements.elmFilter) {
-        elements.btnOpen.addEventListener("click", () => {
-            elements.elmFilter.classList.add("show");
-            $("body").addClass("noScroll");
-        });
-    }
-    if (elements.btnClose && elements.elmFilter) {
-        elements.btnClose.addEventListener("click", hideFilter);
-        elements.btnReset.addEventListener("click", hideFilter);
-        elements.btnApply.addEventListener("click", hideFilter);
-    }
+    elements.btnReset.addEventListener("click", hideFilter);
+    elements.btnApply.addEventListener("click", hideFilter);
 };
 
-// Xử lý accordion
-const toggleAccordion = (content, use) => {
-    const isOpen = content.classList.contains("open");
-    use.setAttribute("xlink:href", isOpen ? "#icon-increase" : "#icon-decrease");
-    content.style.display = isOpen ? "none" : "block";
-    setTimeout(
-        () => content.classList.toggle("open", !isOpen),
-        isOpen ? 200 : 10
-    );
-};
-
-const closeAllAccordions = () => {
-    elements.accordionHeaders.forEach((header) => {
-        const parent = header.closest(".list_accordion");
-        const content = parent.querySelector(".accordion__content");
-        const use = parent.querySelector("use");
-        if (content.classList.contains("open")) toggleAccordion(content, use);
-    });
-};
-
-const initAccordionEvents = () => {
-    elements.accordionHeaders.forEach((header) => {
-        header.addEventListener("click", () => {
-            const parent = header.closest(".list_accordion");
-            toggleAccordion(
-                parent.querySelector(".accordion__content"),
-                parent.querySelector("use")
-            );
-        });
-    });
-};
 
 // Xử lý checkbox và tags
 const handleCheckboxes = () => {
@@ -170,8 +127,6 @@ const handleCheckboxes = () => {
         inputs.forEach((input) => (input.checked = false));
         renderTags();
         toggleDeleteButton();
-        toggleNotFound(false);
-        closeAllAccordions();
     };
 
     inputs.forEach((input) => {
@@ -187,7 +142,8 @@ const handleCheckboxes = () => {
             }
             renderTags();
             toggleDeleteButton();
-            toggleNotFound(checkedData.size > 4);
+            //fake show empty
+            toggleNotFound(checkedData.size > 1);
         });
     });
 
@@ -201,7 +157,8 @@ const handleCheckboxes = () => {
             });
             renderTags();
             toggleDeleteButton();
-            toggleNotFound(checkedData.size > 4);
+            // fake show empty
+            toggleNotFound(checkedData.size > 1);
         }
     });
 
@@ -209,10 +166,42 @@ const handleCheckboxes = () => {
     elements.btnReset.addEventListener("click", resetFilters);
 };
 
+function compareEvent() {
+    const toggle = document.querySelector('.compare-toggle');
+    if (toggle) {
+        toggle.addEventListener("click", () => {
+            const compare = document.querySelector('.compare-box');
+            if (compare.classList.contains('show')) {
+                compare.classList.remove('show');
+            } else {
+                compare.classList.add('show');
+            }
+        });
+    }
+    //Open compare pop
+    const openCompareBut = document.querySelector('#openComparePop');
+    if (openCompareBut) {
+        openCompareBut.addEventListener("click", () => {
+            const compare = document.querySelector('#comparePop');
+            document.querySelector('body').classList.add('no-scroll');
+            compare.classList.add('open');
+        });
+    }
+    // close compare pop
+    const closeComparePop = document.querySelector('.popup-close');
+    if (closeComparePop) {
+        closeComparePop.addEventListener("click", () => {
+            const compare = document.querySelector('#comparePop');
+            document.querySelector('body').classList.remove('no-scroll');
+            compare.classList.remove('open');
+        });
+    }
+
+}
+
 (function () {
-    elements.deleteFilter.classList.add("hide");
     initPriceSlider();
     handleFilterEvents();
-    initAccordionEvents();
     handleCheckboxes();
+    compareEvent();
 })();
