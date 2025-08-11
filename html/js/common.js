@@ -65,50 +65,80 @@ function handleSearch() {
   const resultProductRef = document.getElementById("result-product");
   const suggestSearchs = document.querySelectorAll(".search_popular-item");
 
-  iconOpenRef.addEventListener("click", () => {
-    if (searchPopupRef.classList.contains("show")) {
+  const goSearch = (value) => {
+    if (!value) return;
+    const url = `/html/tim-kiem.html?search=${encodeURIComponent(
+      value
+    )}`;
+    window.location.href = url;
+  };
+
+  if (iconOpenRef) {
+    iconOpenRef.addEventListener("click", () => {
+      if (searchPopupRef.classList.contains("show")) {
+        searchPopupRef.classList.remove("show");
+        document.querySelector("body").classList.add("no-scroll");
+      } else {
+        searchPopupRef.classList.add("show");
+        document.querySelector("body").classList.add("no-scroll");
+      }
+    });
+  }
+
+  if (iconCloseRef) {
+    iconCloseRef.addEventListener("click", () => {
       searchPopupRef.classList.remove("show");
       document.querySelector("body").classList.add("no-scroll");
-    } else {
-      searchPopupRef.classList.add("show");
-      document.querySelector("body").classList.add("no-scroll");
-    }
-  });
-
-  iconCloseRef.addEventListener("click", () => {
-    searchPopupRef.classList.remove("show");
-    document.querySelector("body").classList.add("no-scroll");
-  });
-
-  inputRef.addEventListener("keyup", (e) => {
-    iconClearRef.classList.toggle("show", !!e.target.value);
-    if (e.target.value && e.target.value.length > 4) {
-    }
-    resultDefaultRef.classList.toggle(
-      "hide",
-      e.target.value && e.target.value.length > 4
-    );
-    resultProductRef.classList.toggle(
-      "hide",
-      !(e.target.value && e.target.value.length > 4)
-    );
-  });
-  iconClearRef.addEventListener("click", () => {
-    iconClearRef.classList.remove("show");
-    inputRef.value = "";
-    resultDefaultRef.classList.remove("hide");
-    resultProductRef.classList.add("hide");
-  });
-
-  suggestSearchs.forEach((item) => {
-    item.addEventListener("click", () => {
-      const value = item.getAttribute("data-value");
-      iconClearRef.classList.add("show");
-      inputRef.value = value;
-      resultDefaultRef.classList.add("hide");
-      resultProductRef.classList.remove("hide");
     });
-  });
+  }
+
+  if (inputRef) {
+    inputRef.addEventListener("keyup", (e) => {
+      iconClearRef.classList.toggle("show", !!e.target.value);
+      if (e.target.value && e.target.value.length > 4) {
+      }
+      resultDefaultRef.classList.toggle(
+        "hide",
+        e.target.value && e.target.value.length > 4
+      );
+      resultProductRef.classList.toggle(
+        "hide",
+        !(e.target.value && e.target.value.length > 4)
+      );
+      const value = e.target.value.trim();
+
+      if (e.key === "Enter") {
+        goSearch(e.target.value);
+      }
+      if (value) {
+        if (iconGoSearchRef) {
+          iconGoSearchRef.addEventListener("click", () => {
+            goSearch(e.target.value)
+          });
+        }
+      }
+    });
+  }
+  if (iconClearRef) {
+    iconClearRef.addEventListener("click", () => {
+      iconClearRef.classList.remove("show");
+      inputRef.value = "";
+      resultDefaultRef.classList.remove("hide");
+      resultProductRef.classList.add("hide");
+    });
+  }
+
+  if (suggestSearchs) {
+    suggestSearchs.forEach((item) => {
+      item.addEventListener("click", () => {
+        const value = item.getAttribute("data-value");
+        iconClearRef.classList.add("show");
+        inputRef.value = value;
+        resultDefaultRef.classList.add("hide");
+        resultProductRef.classList.remove("hide");
+      });
+    });
+  }
 }
 
 function menuAnim() {
@@ -275,25 +305,10 @@ function filterEvents() {
   }
 }
 
-function toggleLanguage() {
-  const language = document.querySelector(".select-language");
-  language.addEventListener("click", (e) => {
-    const header = e.target.closest(".select-header");
-    const parent = header?.closest(".select");
-    if (parent) {
-      if (parent.classList.contains("open")) {
-        parent.classList.remove("open");
-      } else {
-        parent.classList.add("open");
-      }
-    }
-  });
-}
-
-function toggleSort() {
-  const sort = document.querySelector(".sort");
-  if (sort) {
-    sort.addEventListener("click", (e) => {
+function toggleSelect() {
+  const page = document.querySelector(".page");
+  if (page) {
+    page.addEventListener("click", (e) => {
       const header = e.target.closest(".select-header");
 
       // header
@@ -302,7 +317,16 @@ function toggleSort() {
         if (parent.classList.contains("open")) {
           parent.classList.remove("open");
         } else {
+          const oldSelect = document.querySelector('.select.open');
+          if (oldSelect) {
+            oldSelect.classList.remove('open');
+          }
           parent.classList.add("open");
+        }
+      } else {
+        const oldSelect = document.querySelector('.select.open');
+        if (oldSelect) {
+          oldSelect.classList.remove('open');
         }
       }
 
@@ -315,7 +339,11 @@ function toggleSort() {
           const text = item.textContent;
           const value = item.getAttribute("data-value");
           console.log("selected", value);
-
+          if (value !== '' && value !== 'none') {
+            parent.classList.add('hasSelected');
+          } else {
+            parent.classList.remove('hasSelected');
+          }
           // old selected
           const oldSelected = parent.querySelector("li.selected");
           if (oldSelected) {
@@ -405,14 +433,17 @@ window.addEventListener("load", loadImagesOnScroll);
 
 (function () {
   handleSearch();
-  toggleLanguage();
+
   navClick();
   menuAnim();
   resize();
 
   menuAccordion();
+
   filterEvents();
-  toggleSort();
+
+
+  toggleSelect();
 
   // marquee
   if (document.querySelector(".marquee__ctn")) {

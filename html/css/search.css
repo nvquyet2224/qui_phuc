@@ -3504,6 +3504,113 @@ a.ui-button:active,
   box-shadow: 0px 0px 5px #666666;
 }
 
+.search-result {
+  padding: 1rem 2.5rem 3.75rem 2.5rem;
+}
+.search-result.empty {
+  padding-bottom: 12.5rem;
+}
+.search-result_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.search-result_txt {
+  color: #000000;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.32px;
+  text-align: center;
+}
+.search-result_txt .title {
+  font-weight: 400;
+}
+.search-result_txt .value {
+  font-weight: 700;
+}
+.search-result_form {
+  max-width: 56.0625rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #000000;
+  color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.search-result_form .form_group {
+  flex: 1;
+  position: relative;
+  padding-right: 1.25rem;
+}
+.search-result_form .form_group input {
+  width: 100%;
+  height: 1.5rem;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+.search-result_form .form_group input::placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+.search-result_form .form_group .search-but--clear {
+  position: absolute;
+  color: #667085;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  min-width: 1rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+.search-result_form .form_group .search-but--clear.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.search-result_form .form_group .search-but--clear svg {
+  width: 100%;
+  min-width: 100%;
+}
+.search-result_form .search-but {
+  cursor: pointer;
+  width: 1.25rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+}
+.search-result_form .search-but svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1023px) {
+  .search-result {
+    padding: 1.875rem 1rem 0rem 1rem;
+  }
+  .search-result.empty {
+    padding-bottom: 3.75rem;
+  }
+  .search-result_wrap {
+    gap: 3.125rem;
+  }
+  .search-result_txt {
+    font-size: 1.5rem;
+  }
+  .search-result_form {
+    max-width: 100%;
+  }
+}
 .filter__head {
   margin-bottom: 1rem;
 }

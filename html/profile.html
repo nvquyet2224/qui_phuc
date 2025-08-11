@@ -1563,403 +1563,313 @@
       </div>
 
       <div class="profile-detail">
-        <div
-          class="profile-detail--item profile-detail--account current"
-          data-target="1"
-        >
-          <div class="account">
-            <div class="account--item current" data-account="1">
-              <div class="account_head profile_head">Thông tin tài khoản</div>
-              <div class="account_content">
-                <div class="title">
-                  <span class="title-left">
-                    <svg>
-                      <use xlink:href="#icon-user"></use>
-                    </svg>
-                    Thông tin tài khoản
-                  </span>
-                  <span
-                    id="account-edit"
-                    class="text-edit link-but transparent blue underline"
-                    data-account="2"
-                  >
-                    Điều chỉnh
-                  </span>
-                </div>
-                <div class="list">
-                  <div class="item">
-                    <span class="item-label"> Họ và Tên </span>
-                    <span class="item-value"> Quang Phan </span>
-                  </div>
-                  <div class="item">
-                    <span class="item-label"> Giới tính </span>
-                    <span class="item-value"> Nam </span>
-                  </div>
-                  <div class="item">
-                    <span class="item-label"> Ngày sinh </span>
-                    <span class="item-value"> 4-8-1999 </span>
-                  </div>
-                  <div class="item">
-                    <span class="item-label"> Email </span>
-                    <span class="item-value"> quangphansales@quiphuc.com </span>
-                  </div>
-                  <div class="item">
-                    <span class="item-label"> SĐT </span>
-                    <span class="item-value"> 034 5670 999 </span>
-                  </div>
-                  <div class="item">
-                    <span class="item-label"> Địa chỉ </span>
-                    <span class="item-value">
-                      184 Cách Mạng Tháng 8, P 9, Q 10, HCM
+        <div class="profile-detail--wrap">
+          <div class="profile-detail--item profile-detail--account current" data-target="1">
+            <div class="account">
+              <div class="account--item current" data-account="1">
+                <div class="account_head profile_head">Thông tin tài khoản</div>
+                <div class="account_content">
+                  <div class="title">
+                    <span class="title-left">
+                      <svg>
+                        <use xlink:href="#icon-user"></use>
+                      </svg>
+                      Thông tin tài khoản
+                    </span>
+                    <span id="account-edit" class="text-edit link-but transparent blue underline" data-account="2">
+                      Điều chỉnh
                     </span>
                   </div>
-                  <div class="item">
-                    <span class="item-label"> Họ và Tên </span>
-                    <span class="item-value"> quangphansales@quiphuc.com </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="account--item" data-account="2">
-              <div class="account_head profile_head">
-                <svg data-account="1" id="back-account">
-                  <use xlink:href="#icon-arrow-prev"></use>
-                </svg>
-                Điều chỉnh
-              </div>
-              <div class="account_content">
-                <form class="form">
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="fullname">
-                        Họ và tên
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="fullname"
-                        placeholder=""
-                        value="Quang Phan"
-                      />
-                      <div class="field_error">Error message</div>
+                  <div class="list">
+                    <div class="item">
+                      <span class="item-label">Họ và Tên</span>
+                      <span class="item-value">Quang Phan</span>
                     </div>
-                  </div>
-
-                  <div class="form_group form_radio">
-                    <div class="form_field">
-                      <input
-                        class="input-radio"
-                        type="radio"
-                        value="male"
-                        checked
-                        id="male"
-                        name="gender"
-                      />
-                      <label for="male" class="form_caption">Nam </label>
+                    <div class="item">
+                      <span class="item-label">Giới tính</span>
+                      <span class="item-value"> Nam </span>
                     </div>
-                    <div class="form_field">
-                      <input
-                        class="input-radio"
-                        type="radio"
-                        value="female"
-                        id="female"
-                        name="gender"
-                      />
-                      <label for="female" class="form_caption"> Nữ </label>
+                    <div class="item">
+                      <span class="item-label">Ngày sinh</span>
+                      <span class="item-value">4-8-1999</span>
                     </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label for="birthday" class="form_caption">
-                        Ngày sinh
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="birthday"
-                        placeholder=""
-                        value="4-8-1999"
-                      />
-                      <div class="field_error">Error message</div>
-                      <div class="field_icon">
-                        <svg>
-                          <use xlink:href="#icon-calendar"></use>
-                        </svg>
-                      </div>
+                    <div class="item">
+                      <span class="item-label">Email</span>
+                      <span class="item-value">quangphansales@quiphuc.com</span>
                     </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field disabled">
-                      <label class="form_caption" for="address">
-                        Địa chỉ
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="address"
-                        placeholder=""
-                        disabled
-                        value="79 Đường số 9"
-                      />
-                      <div class="field_error">Error message</div>
+                    <div class="item">
+                      <span class="item-label">SĐT</span>
+                      <span class="item-value">034 5670 999</span>
                     </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field disabled">
-                      <label class="form_caption"> Tỉnh/thành </label>
-                      <div class="select disabled">
-                        <div class="select-header">
-                          <span class="select-selected"
-                            >Thành phố Hồ Chí Minh</span
-                          >
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li
-                              class="selected"
-                              data-value="Thành phố Hồ Chí Minh"
-                            >
-                              Thành phố Hồ Chí Minh
-                            </li>
-                            <li class="selected" data-value="Hà Nội">Hà Nội</li>
-                            <li class="selected" data-value="Đà nẵng">
-                              Đà nẵng
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field disabled">
-                      <label class="form_caption"> Quận/huyện </label>
-                      <div class="select disabled">
-                        <div class="select-header">
-                          <span class="select-selected">Quận 6</span>
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li class="selected" data-value="Quận 6">Quận 6</li>
-                            <li class="selected" data-value="Quận 1">Quận 1</li>
-                            <li class="selected" data-value="Quận 2">Quận 2</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="field_error">Error message</div>
-                    </div>
-
-                    <div class="form_field disabled">
-                      <span class="form_caption"> Phường/Xã </span>
-                      <div class="select disabled">
-                        <div class="select-header">
-                          <span class="select-selected">Phường 6</span>
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li class="selected" data-value="Phường 6">
-                              Phường 6
-                            </li>
-                            <li class="selected" data-value="Phường 1">
-                              Phường 1
-                            </li>
-                            <li class="selected" data-value="Phường 2">
-                              Phường 2
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field disabled">
-                      <label class="form_caption" for="email"> Email </label>
-                      <input
-                        class="input-txt"
-                        type="email"
-                        id="email"
-                        placeholder=""
-                        disabled
-                        value="quangphansales@quiphuc.com"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field disabled">
-                      <label class="form_caption" for="phone-number">
-                        Số điện thoại
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="phone-number"
-                        placeholder=""
-                        disabled
-                        value="034 5670 999"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-                </form>
-                <div class="account_content-btns">
-                  <button
-                    class="account_content-btn profile-btn btn-outline"
-                    id="btn-back-account"
-                    data-account="1"
-                  >
-                    Bỏ
-                  </button>
-                  <button class="account_content-btn profile-btn" id="btn-save">
-                    Lưu thông tin
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="profile-detail--item profile-detail--history"
-          data-target="2"
-        >
-          <div class="history">
-            <div class="history--item">
-              <div class="history_head profile_head">Lịch sửa mua hàng</div>
-              <div class="history_content">
-                <div class="tab">
-                  <ul class="tab-list pc">
-                    <li class="tab-item current" data-value="Tất cả">
-                      <span>Tất cả (3)</span>
-                    </li>
-                    <li class="tab-item" data-value="Đang gia">
-                      <span>Đang giao (1)</span>
-                    </li>
-                    <li class="tab-item" data-value="Đã giao">
-                      <span>Đã giao (1)</span>
-                    </li>
-                    <li class="tab-item" data-value="Hủy đơn hàng">
-                      <span>Hủy đơn hàng</span>
-                    </li>
-                  </ul>
-                  <div class="select sp">
-                    <div class="select-header">
-                      <span class="select-selected">Tất cả (3)</span>
-                      <span class="select-arrow">
-                        <svg>
-                          <use xlink:href="#icon-chevron-down"></use>
-                        </svg>
+                    <div class="item">
+                      <span class="item-label">Địa chỉ</span>
+                      <span class="item-value">
+                        184 Cách Mạng Tháng 8, P 9, Q 10, HCM
                       </span>
                     </div>
-                    <div class="select-box">
-                      <ul>
-                        <li class="selected" data-value="Tất cả">
-                          Tất cả (3)
-                        </li>
-                        <li class="selected" data-value="Đang giao">Đang giao (1)</li>
-                        <li class="selected" data-value="Đã giao">Đã giao (1)</li>
-                        <li class="selected" data-value="Hủy đơn hàng">Hủy đơn hàng</li>
-                      </ul>
+                    <div class="item">
+                      <span class="item-label">Họ và Tên</span>
+                      <span class="item-value">quangphansales@quiphuc.com</span>
                     </div>
                   </div>
                 </div>
-                <div class="list">
-                  <div class="item">
-                    <div class="item-head">
-                      <span class="date">Ngày đặt hàng: 17-7-2025</span>
-                      <span class="status status-delivered"
-                        >Đang giao hàng</span
-                      >
-                    </div>
-                    <div class="item-content">
-                      <div class="item-img">
-                        <img
-                          width="100"
-                          height="100"
-                          loading="lazy"
-                          fetchpriority="low"
-                          src="images/order-1.png"
-                          alt="Đơn hàng QP000123456"
-                        />
+              </div>
+              <div class="account--item" data-account="2">
+                <div class="account_head profile_head">
+                  <svg data-account="1" id="back-account">
+                    <use xlink:href="#icon-arrow-prev"></use>
+                  </svg>
+                  Điều chỉnh
+                </div>
+                <div class="account_content">
+                  <form class="form">
+                    <div class="form_group">
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="fullname" placeholder="" value="Quang Phan" />
+                        <label class="form_caption" for="fullname">Họ và tên</label>
+                        <div class="field_error">Error message</div>
                       </div>
-                      <div class="item-txt">
-                        <h4 class="name">Đơn hàng QP000123456</h4>
-                        <span class="amount">Số lượng: 2 sản phẩm</span>
-                        <div class="price">
-                          <span class="sale">3.340.000 đ</span>
+                    </div>
+
+                    <div class="form_group form_radio">
+                      <div class="form_field">
+                        <input class="input-radio" type="radio" value="male" checked id="male" name="gender" />
+                        <label for="male" class="form_caption">Nam </label>
+                      </div>
+                      <div class="form_field">
+                        <input class="input-radio" type="radio" value="female" id="female" name="gender" />
+                        <label for="female" class="form_caption"> Nữ </label>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="birthday" placeholder="" value="4-8-1999" />
+                        <label for="birthday" class="form_caption">Ngày sinh</label>
+                        <div class="field_error">Error message</div>
+                        <div class="field_icon">
+                          <svg>
+                            <use xlink:href="#icon-calendar"></use>
+                          </svg>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="item">
-                    <div class="item-head">
-                      <span class="date">Ngày đặt hàng: 17-7-2025</span>
-                      <span class="status status-delivering"
-                        >Đang giao hàng</span
-                      >
-                    </div>
-                    <div class="item-content">
-                      <div class="item-img">
-                        <img
-                          width="100"
-                          height="100"
-                          loading="lazy"
-                          fetchpriority="low"
-                          src="images/order-1.png"
-                          alt="Đơn hàng QP000123456"
-                        />
+
+                    <div class="form_group">
+                      <div class="form_field disabled">
+                        <input class="input-txt" type="text" id="address" placeholder="" disabled
+                          value="79 Đường số 9" />
+                        <label class="form_caption" for="address">Địa chỉ</label>
+                        <div class="field_error">Error message</div>
                       </div>
-                      <div class="item-txt">
-                        <h4 class="name">Đơn hàng QP000123456</h4>
-                        <span class="amount">Số lượng: 2 sản phẩm</span>
-                        <div class="price">
-                          <span class="sale">3.340.000 đ</span>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field disabled">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Thành phố Hồ Chí Minh</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Thành phố Hồ Chí Minh">
+                                Thành phố Hồ Chí Minh
+                              </li>
+                              <li data-value="Hà Nội">Hà Nội</li>
+                              <li data-value="Đà nẵng">
+                                Đà nẵng
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <label class="form_caption">Tỉnh/thành </label>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field disabled">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Quận 6</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Quận 6">Quận 6</li>
+                              <li data-value="Quận 1">Quận 1</li>
+                              <li data-value="Quận 2">Quận 2</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <label class="form_caption"> Quận/huyện </label>
+                        <div class="field_error">Error message</div>
+                      </div>
+
+                      <div class="form_field disabled">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Phường 6</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Phường 6">
+                                Phường 6
+                              </li>
+                              <li data-value="Phường 1">
+                                Phường 1
+                              </li>
+                              <li data-value="Phường 2">
+                                Phường 2
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="form_caption">Phường/Xã </span>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field disabled">
+                        <input class="input-txt" type="email" id="email" placeholder="" disabled
+                          value="quangphansales@quiphuc.com" />
+                        <label class="form_caption" for="email">Email</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field disabled">
+                        <input class="input-txt" type="text" id="phone-number" placeholder="" disabled
+                          value="034 5670 999" />
+                        <label class="form_caption" for="phone-number">Số điện thoại</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="account_content-btns">
+                    <button class="account_content-btn profile-btn btn-outline" id="btn-back-account" data-account="1">
+                      Bỏ
+                    </button>
+                    <button class="account_content-btn profile-btn" id="btn-save">
+                      Lưu thông tin
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-detail--item profile-detail--history" data-target="2">
+            <div class="history">
+              <div class="history--item">
+                <div class="history_head profile_head">Lịch sửa mua hàng</div>
+                <div class="history_content">
+                  <div class="tab">
+                    <ul class="tab-list pc">
+                      <li class="tab-item current" data-value="Tất cả">
+                        <span>Tất cả (3)</span>
+                      </li>
+                      <li class="tab-item" data-value="Đang gia">
+                        <span>Đang giao (1)</span>
+                      </li>
+                      <li class="tab-item" data-value="Đã giao">
+                        <span>Đã giao (1)</span>
+                      </li>
+                      <li class="tab-item" data-value="Hủy đơn hàng">
+                        <span>Hủy đơn hàng</span>
+                      </li>
+                    </ul>
+                    <div class="select sp">
+                      <div class="select-header">
+                        <span class="select-selected">Tất cả (3)</span>
+                        <span class="select-arrow">
+                          <svg>
+                            <use xlink:href="#icon-chevron-down"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="select-box">
+                        <ul>
+                          <li class="selected" data-value="Tất cả">
+                            Tất cả (3)
+                          </li>
+                          <li data-value="Đang giao">Đang giao (1)</li>
+                          <li data-value="Đã giao">Đã giao (1)</li>
+                          <li data-value="Hủy đơn hàng">Hủy đơn hàng</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <div class="item-head">
+                        <span class="date">Ngày đặt hàng: 17-7-2025</span>
+                        <span class="status status-delivered">Đang giao hàng</span>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-img">
+                          <img width="100" height="100" loading="lazy" fetchpriority="low" src="images/order-1.png"
+                            alt="Đơn hàng QP000123456" />
+                        </div>
+                        <div class="item-txt">
+                          <h4 class="name">Đơn hàng QP000123456</h4>
+                          <span class="amount">Số lượng: 2 sản phẩm</span>
+                          <div class="price">
+                            <span class="sale">3.340.000 đ</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="item">
-                    <div class="item-head">
-                      <span class="date">Ngày đặt hàng: 17-7-2025</span>
-                      <span class="status status-cancel">Đang giao hàng</span>
-                    </div>
-                    <div class="item-content">
-                      <div class="item-img">
-                        <img
-                          width="100"
-                          height="100"
-                          loading="lazy"
-                          fetchpriority="low"
-                          src="images/order-1.png"
-                          alt="Đơn hàng QP000123456"
-                        />
+                    <div class="item">
+                      <div class="item-head">
+                        <span class="date">Ngày đặt hàng: 17-7-2025</span>
+                        <span class="status status-delivering">Đang giao hàng</span>
                       </div>
-                      <div class="item-txt">
-                        <h4 class="name">Đơn hàng QP000123456</h4>
-                        <span class="amount">Số lượng: 2 sản phẩm</span>
-                        <div class="price">
-                          <span class="sale">3.340.000 đ</span>
+                      <div class="item-content">
+                        <div class="item-img">
+                          <img width="100" height="100" loading="lazy" fetchpriority="low" src="images/order-1.png"
+                            alt="Đơn hàng QP000123456" />
+                        </div>
+                        <div class="item-txt">
+                          <h4 class="name">Đơn hàng QP000123456</h4>
+                          <span class="amount">Số lượng: 2 sản phẩm</span>
+                          <div class="price">
+                            <span class="sale">3.340.000 đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-head">
+                        <span class="date">Ngày đặt hàng: 17-7-2025</span>
+                        <span class="status status-cancel">Đang giao hàng</span>
+                      </div>
+                      <div class="item-content">
+                        <div class="item-img">
+                          <img width="100" height="100" loading="lazy" fetchpriority="low" src="images/order-1.png"
+                            alt="Đơn hàng QP000123456" />
+                        </div>
+                        <div class="item-txt">
+                          <h4 class="name">Đơn hàng QP000123456</h4>
+                          <span class="amount">Số lượng: 2 sản phẩm</span>
+                          <div class="price">
+                            <span class="sale">3.340.000 đ</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1968,417 +1878,327 @@
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="profile-detail--item profile-detail--address"
-          data-target="3"
-        >
-          <div class="address">
-            <div class="address--item current" data-address="1">
-              <div class="address_head sp-bw profile_head">
-                Địa chỉ giao hàng
-                <button class="link-but address-btn" data-address="3">
-                  <svg>
-                    <use xlink:href="#icon-increase"></use>
+          <div class="profile-detail--item profile-detail--address" data-target="3">
+            <div class="address">
+              <div class="address--item current" data-address="1">
+                <div class="address_head sp-bw profile_head">
+                  Địa chỉ giao hàng
+                  <button class="link-but address-btn" data-address="3">
+                    <svg>
+                      <use xlink:href="#icon-increase"></use>
+                    </svg>
+                    Thêm địa chỉ
+                  </button>
+                </div>
+                <div class="address_content content-full">
+                  <div class="list">
+                    <div class="item">
+                      <div class="item-head">
+                        <div class="item-wrap">
+                          <span class="name">Quang phan</span>
+                          <span class="text-edit edit-address link-but transparent blue underline" data-address="2">
+                            Điều chỉnh
+                          </span>
+                        </div>
+                        <div class="item-tag">Mặc định</div>
+                      </div>
+
+                      <div class="item-txt">
+                        <p>184 Cách Mạng Tháng 8</p>
+                        <p>Phường 9, Quận 10, Tp. HCM</p>
+                        <p>034 5670 999</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-head">
+                        <div class="item-wrap">
+                          <span class="name">Quang phan</span>
+                          <span class="text-edit edit-address link-but transparent blue underline" data-address="2">
+                            Điều chỉnh
+                          </span>
+                        </div>
+                      </div>
+                      <div class="item-txt">
+                        <p>184 Cách Mạng Tháng 8</p>
+                        <p>Phường 9, Quận 10, Tp. HCM</p>
+                        <p>034 5670 999</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="address--item" data-address="2">
+                <div class="address_head profile_head">
+                  <svg data-address="1" class="back-address">
+                    <use xlink:href="#icon-arrow-prev"></use>
                   </svg>
-                  Thêm địa chỉ
-                </button>
-              </div>
-              <div class="address_content content-full">
-                <div class="list">
-                  <div class="item">
-                    <div class="item-head">
-                      <div class="item-wrap">
-                        <span class="name">Quang phan</span>
-                        <span
-                          class="text-edit edit-address link-but transparent blue underline"
-                          data-address="2"
-                        >
-                          Điều chỉnh
-                        </span>
+                  Điều chỉnh địa chỉ
+                </div>
+                <div class="address_content">
+                  <form class="form">
+                    <div class="form_group form_checkbox">
+                      <div class="form_field">
+                        <input id="default" type="checkbox" checked class="input-checkbox" />
+                        <label class="form_caption" for="default">Cài đặt địa chỉ mặc định</label>
+                        <div class="field_error">Error message</div>
                       </div>
-                      <div class="item-tag">Mặc định</div>
+                    </div>
+                    <div class="form_group">
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="firstname" placeholder="" value="Phan" />
+                        <label class="form_caption" for="firstname">Họ</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="lastname" value="Quang" placeholder="" />
+                        <label class="form_caption" for="lastname">Tên</label>
+                        <div class="field_error">Error message</div>
+                      </div>
                     </div>
 
-                    <div class="item-txt">
-                      <p>184 Cách Mạng Tháng 8</p>
-                      <p>Phường 9, Quận 10, Tp. HCM</p>
-                      <p>034 5670 999</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="item-head">
-                      <div class="item-wrap">
-                        <span class="name">Quang phan</span>
-                        <span
-                          class="text-edit edit-address link-but transparent blue underline"
-                          data-address="2"
-                        >
-                          Điều chỉnh
-                        </span>
+                    <div class="form_group">
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="phone" placeholder="" value="034 5670 999" />
+                        <label class="form_caption" for="phone">Số điện thoại</label>
+                        <div class="field_error">Error message</div>
                       </div>
                     </div>
-                    <div class="item-txt">
-                      <p>184 Cách Mạng Tháng 8</p>
-                      <p>Phường 9, Quận 10, Tp. HCM</p>
-                      <p>034 5670 999</p>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="address" placeholder="" value="79 Đường số 9" />
+                        <label class="form_caption" for="address">Địa chỉ</label>
+                        <div class="field_error">Error message</div>
+                      </div>
                     </div>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Thành phố Hồ Chí Minh</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Thành phố Hồ Chí Minh">
+                                Thành phố Hồ Chí Minh
+                              </li>
+                              <li data-value="Hà Nội">Hà Nội</li>
+                              <li data-value="Đà nẵng">
+                                Đà nẵng
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <label class="form_caption">Tỉnh/thành</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Quận 6</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Quận 6">Quận 6</li>
+                              <li data-value="Quận 1">Quận 1</li>
+                              <li data-value="Quận 2">Quận 2</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <label class="form_caption">Quận/huyện</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+
+                      <div class="form_field">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Phường 6</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Phường 6">
+                                Phường 6
+                              </li>
+                              <li data-value="Phường 1">
+                                Phường 1
+                              </li>
+                              <li data-value="Phường 2">
+                                Phường 2
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="form_caption">Phường/Xã</span>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="address_content-btns">
+                    <button class="address_content-btn btn-danger profile-btn btn-outline" id="btn-delete"
+                      data-address="1">
+                      Xóa địa chỉ
+                    </button>
+                    <button class="address_content-btn profile-btn" id="btn-address-save">
+                      Lưu thông tin
+                    </button>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="address--item" data-address="2">
-              <div class="address_head profile_head">
-                <svg data-address="1" class="back-address">
-                  <use xlink:href="#icon-arrow-prev"></use>
-                </svg>
-                Điều chỉnh địa chỉ
-              </div>
-              <div class="address_content">
-                <form class="form">
-                  <div class="form_group form_checkbox">
-                    <div class="form_field">
-                      <input
-                        id="default"
-                        type="checkbox"
-                        checked
-                        class="input-checkbox"
-                      />
-                      <label class="form_caption" for="default"
-                        >Cài đặt địa chỉ mặc định</label
-                      >
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="firstname"> Họ </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="firstname"
-                        placeholder=""
-                        value="Phan"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-
-                    <div class="form_field">
-                      <label class="form_caption" for="lastname"> Tên </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="lastname"
-                        value="Quang"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="phone">
-                        Số điện thoại
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="phone"
-                        value="034 5670 999"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="address">
-                        Địa chỉ
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="address"
-                        placeholder=""
-                        value="79 Đường số 9"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption"> Tỉnh/thành </label>
-                      <div class="select">
-                        <div class="select-header">
-                          <span class="select-selected"
-                            >Thành phố Hồ Chí Minh</span
-                          >
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li
-                              class="selected"
-                              data-value="Thành phố Hồ Chí Minh"
-                            >
-                              Thành phố Hồ Chí Minh
-                            </li>
-                            <li class="selected" data-value="Hà Nội">Hà Nội</li>
-                            <li class="selected" data-value="Đà nẵng">
-                              Đà nẵng
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption"> Quận/huyện </label>
-                      <div class="select">
-                        <div class="select-header">
-                          <span class="select-selected">Quận 6</span>
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li class="selected" data-value="Quận 6">Quận 6</li>
-                            <li class="selected" data-value="Quận 1">Quận 1</li>
-                            <li class="selected" data-value="Quận 2">Quận 2</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="field_error">Error message</div>
-                    </div>
-
-                    <div class="form_field">
-                      <span class="form_caption"> Phường/Xã </span>
-                      <div class="select">
-                        <div class="select-header">
-                          <span class="select-selected">Phường 6</span>
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li class="selected" data-value="Phường 6">
-                              Phường 6
-                            </li>
-                            <li class="selected" data-value="Phường 1">
-                              Phường 1
-                            </li>
-                            <li class="selected" data-value="Phường 2">
-                              Phường 2
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-                </form>
-                <div class="address_content-btns">
-                  <button
-                    class="address_content-btn btn-danger profile-btn btn-outline"
-                    id="btn-delete"
-                    data-address="1"
-                  >
-                    Xóa địa chỉ
-                  </button>
-                  <button
-                    class="address_content-btn profile-btn"
-                    id="btn-address-save"
-                  >
-                    Lưu thông tin
-                  </button>
+              <div class="address--item" data-address="3">
+                <div class="address_head profile_head">
+                  <svg data-address="1" class="back-address">
+                    <use xlink:href="#icon-arrow-prev"></use>
+                  </svg>
+                  Thêm mới địa chỉ
                 </div>
-              </div>
-            </div>
-            <div class="address--item" data-address="3">
-              <div class="address_head profile_head">
-                <svg data-address="1" class="back-address">
-                  <use xlink:href="#icon-arrow-prev"></use>
-                </svg>
-                Thêm mới địa chỉ
-              </div>
-              <div class="address_content">
-                <form class="form">
-                  <div class="form_group form_checkbox">
-                    <div class="form_field">
-                      <input
-                        id="default-address"
-                        type="checkbox"
-                        class="input-checkbox"
-                        name="default"
-                      />
-                      <label class="form_caption" for="default-address">
-                        Cài đặt địa chỉ mặc định
-                      </label>
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="firstname"> Họ </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="firstname"
-                        placeholder=""
-                        value="Phan"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-
-                    <div class="form_field">
-                      <label class="form_caption" for="lastname"> Tên </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="lastname"
-                        value="Quang"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="phone">
-                        Số điện thoại
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="phone"
-                        value="034 5670 999"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption" for="address">
-                        Địa chỉ
-                      </label>
-                      <input
-                        class="input-txt"
-                        type="text"
-                        id="address"
-                        placeholder=""
-                        value="79 Đường số 9"
-                      />
-                      <div class="field_error">Error message</div>
-                    </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption"> Tỉnh/thành </label>
-                      <div class="select">
-                        <div class="select-header">
-                          <span class="select-selected"
-                            >Thành phố Hồ Chí Minh</span
-                          >
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li
-                              class="selected"
-                              data-value="Thành phố Hồ Chí Minh"
-                            >
-                              Thành phố Hồ Chí Minh
-                            </li>
-                            <li class="selected" data-value="Hà Nội">Hà Nội</li>
-                            <li class="selected" data-value="Đà nẵng">
-                              Đà nẵng
-                            </li>
-                          </ul>
-                        </div>
+                <div class="address_content">
+                  <form class="form">
+                    <div class="form_group form_checkbox">
+                      <div class="form_field">
+                        <input id="default-address" type="checkbox" class="input-checkbox" name="default" />
+                        <label class="form_caption" for="default-address">
+                          Cài đặt địa chỉ mặc định
+                        </label>
+                        <div class="field_error">Error message</div>
                       </div>
-                      <div class="field_error">Error message</div>
                     </div>
-                  </div>
-
-                  <div class="form_group">
-                    <div class="form_field">
-                      <label class="form_caption"> Quận/huyện </label>
-                      <div class="select">
-                        <div class="select-header">
-                          <span class="select-selected">Quận 6</span>
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li class="selected" data-value="Quận 6">Quận 6</li>
-                            <li class="selected" data-value="Quận 1">Quận 1</li>
-                            <li class="selected" data-value="Quận 2">Quận 2</li>
-                          </ul>
-                        </div>
+                    <div class="form_group">
+                      <div class="form_field">
+                        <label class="form_caption" for="firstname">Họ</label>
+                        <input class="input-txt" type="text" id="firstname" placeholder="" value="Phan" />
+                        <div class="field_error">Error message</div>
                       </div>
-                      <div class="field_error">Error message</div>
+
+                      <div class="form_field">
+                        <label class="form_caption" for="lastname">Tên</label>
+                        <input class="input-txt" type="text" id="lastname" placeholder="" value="Quang" />
+                        <div class="field_error">Error message</div>
+                      </div>
                     </div>
 
-                    <div class="form_field">
-                      <span class="form_caption"> Phường/Xã </span>
-                      <div class="select">
-                        <div class="select-header">
-                          <span class="select-selected">Phường 6</span>
-                          <span class="select-arrow">
-                            <svg>
-                              <use xlink:href="#icon-chevron-down"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class="select-box">
-                          <ul>
-                            <li class="selected" data-value="Phường 6">
-                              Phường 6
-                            </li>
-                            <li class="selected" data-value="Phường 1">
-                              Phường 1
-                            </li>
-                            <li class="selected" data-value="Phường 2">
-                              Phường 2
-                            </li>
-                          </ul>
-                        </div>
+                    <div class="form_group">
+                      <div class="form_field">
+                        <input class="input-txt" type="text" id="phone" placeholder="" value="034 5670 999" />
+                        <label class="form_caption" for="phone">Số điện thoại</label>
+                        <div class="field_error">Error message</div>
                       </div>
-                      <div class="field_error">Error message</div>
                     </div>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <label class="form_caption" for="address">
+                          Địa chỉ
+                        </label>
+                        <input class="input-txt" type="text" id="address" placeholder="" value="79 Đường số 9" />
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Thành phố Hồ Chí Minh</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Thành phố Hồ Chí Minh">
+                                Thành phố Hồ Chí Minh
+                              </li>
+                              <li data-value="Hà Nội">Hà Nội</li>
+                              <li data-value="Đà nẵng">
+                                Đà nẵng
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <label class="form_caption">Tỉnh/thành</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+
+                    <div class="form_group">
+                      <div class="form_field">
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Quận 6</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Quận 6">Quận 6</li>
+                              <li data-value="Quận 1">Quận 1</li>
+                              <li data-value="Quận 2">Quận 2</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <label class="form_caption">Quận/huyện</label>
+                        <div class="field_error">Error message</div>
+                      </div>
+
+                      <div class="form_field">
+                        <span class="form_caption"> Phường/Xã </span>
+                        <div class="select hasSelected">
+                          <div class="select-header">
+                            <span class="select-selected">Phường 6</span>
+                            <span class="select-arrow">
+                              <svg>
+                                <use xlink:href="#icon-chevron-down"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="select-box">
+                            <ul>
+                              <li class="selected" data-value="Phường 6">
+                                Phường 6
+                              </li>
+                              <li data-value="Phường 1">
+                                Phường 1
+                              </li>
+                              <li data-value="Phường 2">
+                                Phường 2
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="field_error">Error message</div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="address_content-btns">
+                    <button class="address_content-btn profile-btn" id="btn-address-add">
+                      Lưu thông tin
+                    </button>
                   </div>
-                </form>
-                <div class="address_content-btns">
-                  <button
-                    class="address_content-btn profile-btn"
-                    id="btn-address-add"
-                  >
-                    Lưu thông tin
-                  </button>
                 </div>
               </div>
             </div>
@@ -2388,7 +2208,6 @@
     </div>
   </div>
 </section>
-
           <section class="section subscribe">
     <div class="subscribe_wrap">
         <div class="subscribe_block">
@@ -2531,23 +2350,7 @@
   </div>
   <!--Script-->
   <script defer src="js/common.js"></script>
-  <script>
-    function script(url) {
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = false;
-      s.src = url;
-      var x = document.getElementsByTagName("head")[0];
-      x.appendChild(s);
-    }
-      window.onload = function () {
-        setTimeout(function () {
-          ["js/profile_main.js"].forEach(function (src) {
-            script(src);
-          });
-        }, 0);
-      }
-  </script>
+  <script defer src="js/profile_main.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">

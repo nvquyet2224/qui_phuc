@@ -150,6 +150,9 @@ input[type=number] {
   top: 1.25rem;
 }
 .product .add-to-cart {
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
   color: var(--global-color);
 }
 .product .color {
@@ -296,6 +299,20 @@ input[type=number] {
   cursor: pointer;
 }
 .compare-item svg {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.add-to-cart {
+  font-weight: 500;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.add-to-cart svg {
   width: 0.5rem;
   height: 0.5rem;
 }
@@ -769,6 +786,8 @@ input[type=number] {
     overflow: hidden;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scrollbar-color: #7d7d7d #fff;
   }
   .tab-list {
     white-space: nowrap;
