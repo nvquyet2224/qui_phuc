@@ -67,17 +67,16 @@ function handleSearch() {
 
   const goSearch = (value) => {
     if (!value) return;
-    const url = `/html/tim-kiem.html?search=${encodeURIComponent(
-      value
-    )}`;
+    const url = `/html/tim-kiem.html?search=${encodeURIComponent(value)}`;
     window.location.href = url;
   };
 
   if (iconOpenRef) {
     iconOpenRef.addEventListener("click", () => {
+      lazyEvent();
       if (searchPopupRef.classList.contains("show")) {
         searchPopupRef.classList.remove("show");
-        document.querySelector("body").classList.add("no-scroll");
+        document.querySelector("body").classList.remove("no-scroll");
       } else {
         searchPopupRef.classList.add("show");
         document.querySelector("body").classList.add("no-scroll");
@@ -88,7 +87,7 @@ function handleSearch() {
   if (iconCloseRef) {
     iconCloseRef.addEventListener("click", () => {
       searchPopupRef.classList.remove("show");
-      document.querySelector("body").classList.add("no-scroll");
+      document.querySelector("body").classList.remove("no-scroll");
     });
   }
 
@@ -113,12 +112,13 @@ function handleSearch() {
       if (value) {
         if (iconGoSearchRef) {
           iconGoSearchRef.addEventListener("click", () => {
-            goSearch(e.target.value)
+            goSearch(e.target.value);
           });
         }
       }
     });
   }
+
   if (iconClearRef) {
     iconClearRef.addEventListener("click", () => {
       iconClearRef.classList.remove("show");
@@ -137,6 +137,29 @@ function handleSearch() {
         resultDefaultRef.classList.add("hide");
         resultProductRef.classList.remove("hide");
       });
+    });
+  }
+}
+
+function handleMiniCart() {
+  const buttonCartRef = document.getElementById("icon-open-minicart");
+  const miniCartRef = document.getElementById("mini-cart");
+  const buttonCloseRef = document.getElementById("mini-cart--close");
+  if (buttonCartRef) {
+    buttonCartRef.addEventListener("click", () => {
+      lazyEvent();
+      if (miniCartRef) {
+        miniCartRef.classList.add("show");
+         document.querySelector("body").classList.add("no-scroll");
+      }
+    });
+  }
+  if (buttonCloseRef) {
+    buttonCloseRef.addEventListener("click", () => {
+      if (miniCartRef) {
+        miniCartRef.classList.remove("show");
+         document.querySelector("body").classList.remove("no-scroll");
+      }
     });
   }
 }
@@ -317,16 +340,16 @@ function toggleSelect() {
         if (parent.classList.contains("open")) {
           parent.classList.remove("open");
         } else {
-          const oldSelect = document.querySelector('.select.open');
+          const oldSelect = document.querySelector(".select.open");
           if (oldSelect) {
-            oldSelect.classList.remove('open');
+            oldSelect.classList.remove("open");
           }
           parent.classList.add("open");
         }
       } else {
-        const oldSelect = document.querySelector('.select.open');
+        const oldSelect = document.querySelector(".select.open");
         if (oldSelect) {
-          oldSelect.classList.remove('open');
+          oldSelect.classList.remove("open");
         }
       }
 
@@ -339,10 +362,10 @@ function toggleSelect() {
           const text = item.textContent;
           const value = item.getAttribute("data-value");
           console.log("selected", value);
-          if (value !== '' && value !== 'none') {
-            parent.classList.add('hasSelected');
+          if (value !== "" && value !== "none") {
+            parent.classList.add("hasSelected");
           } else {
-            parent.classList.remove('hasSelected');
+            parent.classList.remove("hasSelected");
           }
           // old selected
           const oldSelected = parent.querySelector("li.selected");
@@ -376,7 +399,7 @@ function loadImagesOnScroll() {
   document.querySelectorAll(".lazy:not(.loaded)").forEach((img) => {
     if (window.innerWidth >= 1024) {
       if (!img.classList.contains("sp")) {
-        if (isInViewport(img, 50)) {
+        if (isInViewport(img, 200)) {
           const src = img.getAttribute("data-src");
           if (src) {
             img.setAttribute("src", src);
@@ -433,6 +456,7 @@ window.addEventListener("load", loadImagesOnScroll);
 
 (function () {
   handleSearch();
+  handleMiniCart();
 
   navClick();
   menuAnim();
@@ -441,7 +465,6 @@ window.addEventListener("load", loadImagesOnScroll);
   menuAccordion();
 
   filterEvents();
-
 
   toggleSelect();
 
