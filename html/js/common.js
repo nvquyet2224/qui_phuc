@@ -54,6 +54,32 @@ class LogosMarquee {
   }
 }
 
+function showCTAAddToCart() {
+  const cart = document.querySelector(".sctiky_cart");
+  const button = document.querySelector(".metadata_cart-add");
+
+  function isBottom() {
+    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+  }
+
+  function checkCart() {
+    const rect = button.getBoundingClientRect();
+
+    if (isBottom()) {
+      // tới cuối trang -> ẩn
+      cart.classList.remove("show");
+    } else if (rect.top < 0) {
+      // button đã đi qua khỏi phía trên -> hiện
+      cart.classList.add("show");
+    } else {
+      // button còn trong viewport -> ẩn
+      cart.classList.remove("show");
+    }
+  }
+
+  window.addEventListener("scroll", checkCart);
+}
+
 function handleSearch() {
   const iconOpenRef = document.getElementById("icon-open-search");
   const iconCloseRef = document.getElementById("icon-close-search");
@@ -328,6 +354,31 @@ function filterEvents() {
   }
 }
 
+function footerAccordion() {
+  const companyArrow = document.getElementById("company-arrow");
+  const company = document.getElementById("company-info");
+  const companyContact = document.querySelector(".company-contact");
+  const lis = document.querySelectorAll(".company-contact li");
+  let height = 0;
+  if (lis && lis.length > 0) {
+    lis.forEach((li) => {
+      height += li.offsetHeight;
+    });
+  }
+  // console.log('height', height)
+  if (companyArrow && company && companyContact) {
+    companyArrow.addEventListener("click", () => {
+      if (company.classList.contains("current")) {
+        company.classList.remove("current");
+        companyContact.style.height = "0px";
+      } else {
+        company.classList.add("current");
+        companyContact.style.height = height + "px";
+      }
+    });
+  }
+}
+
 function toggleSelect() {
   const page = document.querySelector(".page");
   if (page) {
@@ -456,6 +507,8 @@ window.addEventListener("load", loadImagesOnScroll);
 
 (function () {
   handleSearch();
+  showCTAAddToCart();
+  footerAccordion();
   handleMiniCart();
 
   navClick();
