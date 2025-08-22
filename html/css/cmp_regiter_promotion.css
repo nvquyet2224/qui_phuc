@@ -1,0 +1,86 @@
+.subscribe {
+  position: relative;
+  width: 100%;
+  padding: 5.25rem 3.375rem 5.25rem 10rem;
+  overflow: visible;
+  background: linear-gradient(180deg, #015AAB 0%, #82C3FF 109.43%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.subscribe_wrap {
+  display: flex;
+  width: 100%;
+}
+.subscribe_block {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.subscribe_block h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.subscribe_form {
+  width: 27.25rem;
+  height: 3rem;
+  display: flex;
+  margin-top: 2.1875rem;
+}
+.subscribe_form .subscribe-input {
+  flex-grow: 1;
+  background-color: #fff;
+  -webkit-border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: #4D4A4F;
+  font-weight: 400;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #D1D1D1;
+  font-size: 0.875rem;
+}
+.subscribe_form .subscribe-input::placeholder {
+  color: #4D4A4F;
+}
+.subscribe_form .link-but {
+  width: 3.5rem;
+  height: 100%;
+  -webkit-border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.subscribe_img {
+  position: absolute;
+  right: 3.375rem;
+  top: -4.375rem;
+  width: 36.3125rem;
+  line-height: 0;
+}
+.subscribe_img img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .subscribe {
+    padding: 2.25rem 0.9375rem 0 0.9375rem;
+  }
+  .subscribe_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe_block {
+    font-size: 0.875rem;
+  }
+  .subscribe_block h2 {
+    font-size: 1.25rem;
+  }
+  .subscribe_form {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .subscribe_img {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-bottom: -32%;
+    width: 93.733333333%;
+  }
+}

@@ -42,7 +42,7 @@ function profileCommon() {
   const editAccount = document.getElementById("account-edit");
   const backAccountBtn = document.getElementById("btn-back-account");
   [backAccount, editAccount, backAccountBtn].forEach((item) => {
-    console.log('backAccountBtn', item)
+    // console.log('backAccountBtn', item)
     if (item) {
       item.addEventListener("click", function () {
         const _target = this.getAttribute("data-account");
@@ -72,6 +72,13 @@ function profileCommon() {
       setAddress(_target);
     });
   });
+
+  const params = new URLSearchParams(window.location.search);
+  const _current = params.get("current");
+  // console.log('_current', _current);
+  if (_current) {
+    setCurrent(_current);
+  }
 }
 
 (function () {

@@ -1,0 +1,106 @@
+.commit_wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.commit_banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440/660;
+  line-height: 0;
+}
+.commit_banner img,
+.commit_banner video {
+  width: 100%;
+  height: 100%;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+}
+.commit_banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 70, 130, 0.7490196078);
+}
+.commit_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  padding-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.commit_content .mini-logo {
+  display: block;
+  width: 17.25rem;
+  height: auto;
+  line-height: 0;
+  margin: 0 auto;
+  margin-bottom: 2.125rem;
+}
+.commit_content .mini-logo img {
+  width: 100%;
+  height: auto;
+}
+.commit_content .mini-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+.commit_content .commits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: auto;
+}
+.commit_content .commits-item {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 6.75rem 1.875rem;
+}
+.commit_content .commits-item:first-child {
+  border-left: none;
+}
+.commit_content .commits-item .unit {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .commit_banner {
+    aspect-ratio: 375/660;
+  }
+  .commit_content {
+    padding-top: 3.5rem;
+  }
+  .commit_content .mini-logo {
+    width: 11.3125rem;
+    margin-bottom: 1.875rem;
+  }
+  .commit_content .mini-title {
+    padding: 0 0.9375rem;
+    margin-bottom: 2.625rem;
+  }
+  .commit_content .commits {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: auto;
+  }
+  .commit_content .commits-item {
+    border-left: none;
+    font-size: 0.875rem;
+    padding: 1.5625rem;
+  }
+  .commit_content .commits-item .unit {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+  }
+}

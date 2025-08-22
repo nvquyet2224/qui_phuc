@@ -1,0 +1,33 @@
+.breadcrumb {
+  padding: 1.5rem 2.5rem;
+}
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.breadcrumb ul li a,
+.breadcrumb ul li span {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+.breadcrumb ul li a {
+  color: #B4B4B4;
+}
+.breadcrumb ul li span {
+  color: #242420;
+}
+
+@media screen and (max-width: 1023px) {
+  .breadcrumb {
+    padding: 1rem;
+  }
+  .breadcrumb ul {
+    gap: 0.625rem;
+  }
+  .breadcrumb li a,
+  .breadcrumb li span {
+    font-size: 0.75rem;
+  }
+}

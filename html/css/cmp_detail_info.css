@@ -1,0 +1,127 @@
+.info {
+  width: 100%;
+  padding: 3.75rem 2.5rem;
+}
+.info_wrap {
+  position: relative;
+}
+.info_head {
+  text-align: center;
+  margin-bottom: 3.25rem;
+}
+.info_head .title {
+  font-size: 1.875rem;
+  line-height: 38/30;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 3.25rem;
+  text-transform: uppercase;
+}
+.info_head .text {
+  max-width: 56.375rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #101828;
+  margin: 0 auto;
+}
+.info_content {
+  background-color: #f2f2f2;
+  display: flex;
+  gap: 16.4375rem;
+  justify-content: space-between;
+  padding: 3.625rem 3.125rem 3.625rem 10rem;
+}
+.info_content-thumb {
+  width: 32.406602954%;
+}
+.info_content-thumb img {
+  width: 100%;
+  height: auto;
+}
+.info_content-tech .title {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.info_content-tech table {
+  border-collapse: inherit;
+  width: 100%;
+}
+.info_content-tech table tr:not(:last-child) td {
+  border-bottom: 0;
+}
+.info_content-tech table tr td {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  border: 1px solid #d0d5dd;
+  padding: 0.625rem 1rem;
+}
+.info_content-tech table tr td.bg-white {
+  background-color: #fff;
+}
+.info_content-tech table tr td.rtl {
+  border-top-left-radius: 0.5rem;
+}
+.info_content-tech table tr td.rtr {
+  border-top-right-radius: 0.5rem;
+}
+.info_content-tech table tr td.rbl {
+  border-bottom-left-radius: 0.5rem;
+}
+.info_content-tech table tr td.rbr {
+  border-bottom-right-radius: 0.5rem;
+}
+.info_content-tech table tr td:not(:last-child) {
+  border-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .info {
+    padding: 1.25rem 1rem;
+  }
+  .info_head {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .info_head .title {
+    font-size: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+  .info_head .text {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .info_content {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.5rem 1rem;
+  }
+  .info_content-thumb {
+    width: 100%;
+    padding-right: 1.0625rem;
+  }
+  .info_content-thumb img {
+    width: 100%;
+    height: auto;
+  }
+  .info_content-tech .title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .info_content-tech table {
+    border-collapse: inherit;
+  }
+  .info_content-tech table tr:not(:last-child) td {
+    border-bottom: 0;
+  }
+  .info_content-tech table tr td {
+    padding: 0.75rem 1rem;
+  }
+}

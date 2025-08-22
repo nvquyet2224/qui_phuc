@@ -1,0 +1,335 @@
+.safe {
+  padding: 3.75rem 2.5rem;
+}
+.safe_wrap {
+  display: flex;
+  column-gap: 7.875rem;
+}
+.safe_thumb {
+  width: 49.5588235294%;
+  position: relative;
+}
+.safe_thumb::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 96.587537092%;
+}
+.safe_thumb img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+}
+.safe_txt {
+  flex: 1;
+}
+.safe_txt .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.safe_txt .text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+}
+
+.structure {
+  padding: 3.75rem 2.5rem;
+}
+.structure img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+}
+.structure_top {
+  padding-left: 7.125rem;
+  max-width: 50.1764705882%;
+  margin-bottom: 2.625rem;
+}
+.structure_top .text {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+.structure_bottom {
+  display: flex;
+  column-gap: 7.875rem;
+}
+.structure_bottom-left {
+  width: 49.5588235294%;
+  position: relative;
+}
+.structure_bottom-left::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 101.632047478%;
+}
+.structure_bottom-right {
+  flex: 1;
+}
+.structure_bottom-right--img {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.structure_bottom-right--img::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 72.7598566308%;
+}
+.structure_bottom-right--txt .txt-item {
+  display: flex;
+}
+.structure_bottom-right--txt .txt-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.structure_bottom-right--txt .txt-item .text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.structure_bottom-right--txt .txt-item svg {
+  min-width: 0.6875rem;
+  margin-top: 0.3125rem;
+  width: 0.6875rem;
+  height: 0.8125rem;
+  margin-right: 0.3125rem;
+}
+
+.bigimg {
+  padding: 3.75rem 2.5rem;
+}
+.bigimg img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+}
+.bigimg-img {
+  width: 100%;
+  position: relative;
+}
+.bigimg-img::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+}
+
+.additional {
+  padding: 3.75rem 2.5rem;
+}
+.additional img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.additional_wrap {
+  display: flex;
+  column-gap: 7.875rem;
+}
+.additional_left {
+  width: 49.5588235294%;
+  position: relative;
+}
+.additional_left::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 101.632047478%;
+}
+.additional_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.additional_right-img {
+  width: 100%;
+  position: relative;
+}
+.additional_right-img::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 57.602862254%;
+}
+.additional_right-txt .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.additional_right-txt .text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+}
+.additional_right-txt .text:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .safe {
+    padding: 1.25rem 1rem;
+  }
+  .safe_wrap {
+    flex-direction: column-reverse;
+    column-gap: 0rem;
+    gap: 1.5rem;
+  }
+  .safe_thumb {
+    width: 100%;
+  }
+  .safe_thumb::before {
+    padding-top: 96.501457725%;
+  }
+  .safe_txt {
+    flex: 1;
+  }
+  .safe_txt .title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .safe_txt .text {
+    font-size: 0.875rem;
+  }
+  .structure {
+    padding: 1.25rem 1rem;
+  }
+  .structure img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  .structure_top {
+    padding-left: 0;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .structure_top .text {
+    font-size: 1rem;
+  }
+  .structure_bottom {
+    flex-direction: column-reverse;
+    column-gap: 0rem;
+    gap: 1.5rem;
+  }
+  .structure_bottom-left {
+    width: 100%;
+    position: relative;
+  }
+  .structure_bottom-left::before {
+    display: none;
+  }
+  .structure_bottom-right {
+    flex: 1;
+  }
+  .structure_bottom-right--img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .structure_bottom-right--img::before {
+    display: none;
+  }
+  .structure_bottom-right--txt .txt-item {
+    display: flex;
+  }
+  .structure_bottom-right--txt .txt-item:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+  .structure_bottom-right--txt .txt-item .text {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .structure_bottom-right--txt .txt-item svg {
+    margin-top: 0.125rem;
+  }
+  .bigimg {
+    padding: 1.25rem 1rem;
+  }
+  .additional {
+    padding: 1.25rem 1rem;
+  }
+  .additional img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  .additional_wrap {
+    flex-direction: column-reverse;
+    column-gap: 0rem;
+    gap: 1.5rem;
+  }
+  .additional_left {
+    width: 100%;
+  }
+  .additional_left::before {
+    display: none;
+  }
+  .additional_right {
+    width: 100%;
+  }
+  .additional_right-img::before {
+    display: none;
+  }
+  .additional_right-txt .title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .additional_right-txt .text {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  .additional_right-txt .text:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

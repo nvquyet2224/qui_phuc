@@ -1,0 +1,218 @@
+.brand {
+  margin-bottom: 7.5rem;
+}
+.brand__personal {
+  display: flex;
+}
+.brand__personal-text {
+  background: #c7e1ff;
+  width: 50%;
+  padding: 5rem;
+}
+.brand__personal-text .title_block {
+  margin-bottom: 3.4375rem;
+}
+.brand__personal-accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+.brand__personal-accordion .accordion-item {
+  transition: all 0.3s;
+  padding-bottom: 1.25rem;
+}
+.brand__personal-accordion .accordion-item:not(:last-child) {
+  border-bottom: 1px solid rgba(154, 154, 154, 0.5019607843);
+}
+.brand__personal-accordion .accordion-item.current .title svg {
+  transform: rotate(0deg);
+}
+.brand__personal-accordion .accordion-item.current .text {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 0.75rem;
+}
+.brand__personal-accordion .accordion-item .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  line-height: 1.6;
+}
+.brand__personal-accordion .accordion-item .title svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+.brand__personal-accordion .accordion-item .text {
+  padding-top: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #344054;
+  line-height: 1.6;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.brand__personal-thumb {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1/1;
+}
+.brand__personal-thumb img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.brand__certi {
+  display: flex;
+}
+.brand__certi-text {
+  background: #c7e1ff;
+  width: 50%;
+  padding: 5rem;
+  position: relative;
+}
+.brand__certi-text .title_block {
+  margin-bottom: 3.4375rem;
+}
+.brand__certi-text .title_block p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #344054;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.brand__certi-text .link-but {
+  background-color: #fff;
+  color: #055ca5;
+  border: 1px solid rgba(16, 24, 40, 0.0509803922);
+}
+.brand__certi-marque {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.brand__certi-marque--inner {
+  display: flex;
+  animation: scroll 5s linear infinite;
+  width: max-content;
+}
+.brand__certi-marque .patter-thumb {
+  width: 18.75rem;
+  height: 9.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand__certi-marque .patter-thumb img {
+  width: 13rem;
+  height: auto;
+}
+.brand__certi-thumb {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1/1;
+}
+.brand__certi-thumb img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.brand .section-partner {
+  position: absolute;
+  left: 0;
+  bottom: 1.25rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .brand {
+    margin-bottom: 3.75rem;
+  }
+  .brand__personal {
+    flex-direction: column;
+  }
+  .brand__personal-text {
+    width: 100%;
+    padding: 3.75rem 1rem;
+  }
+  .brand__personal-text .title_block {
+    margin-bottom: 1.875rem;
+  }
+  .brand__personal-accordion {
+    row-gap: 1rem;
+  }
+  .brand__personal-accordion .accordion-item {
+    padding-bottom: 1rem;
+  }
+  .brand__personal-accordion .accordion-item.current .title svg {
+    transform: rotate(0deg);
+  }
+  .brand__personal-accordion .accordion-item.current .text {
+    padding-top: 0.75rem;
+  }
+  .brand__personal-accordion .accordion-item .title {
+    font-size: 1rem;
+  }
+  .brand__personal-accordion .accordion-item .title svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .brand__personal-accordion .accordion-item .text {
+    font-size: 0.875rem;
+  }
+  .brand__personal-thumb {
+    width: 100%;
+  }
+  .brand__certi {
+    flex-direction: column-reverse;
+  }
+  .brand__certi-text {
+    width: 100%;
+    padding: 3.75rem 1rem;
+  }
+  .brand__certi-text .title_block {
+    margin-bottom: 4.875rem;
+  }
+  .brand__certi-text .title_block p {
+    margin-top: 1.5rem;
+    margin-bottom: 2.625rem;
+    font-size: 0.875rem;
+  }
+  .brand__certi-marque .patter-thumb {
+    width: 9.75rem;
+    height: 4.875rem;
+  }
+  .brand__certi-marque .patter-thumb img {
+    width: 6.75rem;
+    height: auto;
+  }
+  .brand__certi-thumb {
+    width: 100%;
+  }
+  .brand .section-partner {
+    bottom: 0rem;
+  }
+}

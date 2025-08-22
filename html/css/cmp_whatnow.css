@@ -1,0 +1,222 @@
+.whatnow_wrap {
+  position: relative;
+}
+.whatnow_banner {
+  position: relative;
+}
+.whatnow_banner--item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  line-height: 0;
+}
+.whatnow_banner--item.current {
+  position: relative;
+  left: auto;
+  top: auto;
+  opacity: 1;
+}
+.whatnow_banner--item img {
+  width: 100%;
+  height: auto;
+}
+.whatnow_banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(52.84% 52.84% at 50% 47.16%, rgba(255, 255, 255, 0) 34.13%, rgba(0, 0, 0, 0.54) 100%);
+}
+.whatnow_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 2.5rem;
+  padding-top: 4.625rem;
+  z-index: 1;
+}
+.whatnow_detail {
+  width: 28rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.whatnow_detail .title_block .sub-title,
+.whatnow_detail .title_block h2 {
+  color: #fff;
+}
+.whatnow_detail .title_block,
+.whatnow_detail p {
+  margin-bottom: 1.25rem;
+}
+.whatnow_thumb {
+  width: 48.125rem;
+  position: absolute;
+  right: 3px;
+  bottom: 3.625rem;
+  z-index: 3;
+}
+.whatnow_thumb .card {
+  padding: 1.5625rem;
+  position: relative;
+  border: 2px solid var(--global-color);
+  -webkit-border-radius: 0.75rem;
+  border-radius: 0.75rem;
+}
+.whatnow_thumb .card::before {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(../images/cd.png) no-repeat center center;
+  background-size: 100% auto;
+}
+.whatnow_thumb .card-img {
+  width: 8.1875rem;
+  height: auto;
+}
+.whatnow_thumb .card-txt h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.whatnow_thumb .card-txt .price {
+  font-size: 1rem;
+}
+.whatnow_thumb--item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.whatnow_thumb--item.current {
+  position: relative;
+  left: auto;
+  top: auto;
+  opacity: 1;
+  pointer-events: all;
+}
+.whatnow_thumb .whatnowSlider {
+  padding-bottom: 1.25rem;
+}
+.whatnow_thumb--img {
+  aspect-ratio: 142/104;
+  line-height: 0;
+  cursor: pointer;
+}
+.whatnow_thumb--img img {
+  width: 100%;
+  height: 100%;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.whatnow_thumb .swiper-horizontal > .swiper-scrollbar {
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+.whatnow_thumb .swiper-button-prev,
+.whatnow_thumb .swiper-button-next {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 1 !important;
+  color: #fff;
+  top: auto;
+  bottom: -0.75rem;
+}
+.whatnow_thumb .swiper-button-prev::after,
+.whatnow_thumb .swiper-button-next::after {
+  font-size: 1.25rem;
+}
+.whatnow_thumb .swiper-button-prev {
+  left: -1.25rem;
+  display: none;
+}
+.whatnow_thumb .swiper-button-next {
+  right: -1.25rem;
+}
+.whatnow .block-nav {
+  gap: 0.75rem;
+}
+.whatnow .nav-prev,
+.whatnow .nav-next {
+  width: 3rem;
+  height: 3rem;
+  background-color: #F1F1F1;
+  border: none;
+}
+.whatnow .nav-prev svg,
+.whatnow .nav-next svg {
+  width: 0.5rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .whatnow .title_block {
+    margin-bottom: 1.25rem;
+  }
+  .whatnow_wrap {
+    position: relative;
+  }
+  .whatnow_banner {
+    position: relative;
+  }
+  .whatnow_banner--item {
+    aspect-ratio: 375/648;
+  }
+  .whatnow_banner--item img {
+    width: 100%;
+    height: 100%;
+    -webkit-object-fit: cover;
+    object-fit: cover;
+  }
+  .whatnow_content {
+    padding-top: 3.125rem;
+    padding-left: 0.9375rem;
+  }
+  .whatnow_thumb {
+    width: 100%;
+    right: 0;
+    bottom: 3.125rem;
+    padding: 0 0.9375rem;
+  }
+  .whatnow_thumb .whatnowSlider {
+    overflow: visible;
+  }
+  .whatnow_thumb .card {
+    padding: 1.25rem 0.625rem;
+  }
+  .whatnow_thumb .card::before {
+    top: 0.625rem;
+    left: 0.625rem;
+  }
+  .whatnow_thumb .card-img {
+    width: 5.5rem;
+  }
+  .whatnow_thumb .card-txt h3,
+  .whatnow_thumb .card-txt .price {
+    font-size: 0.75rem;
+  }
+}

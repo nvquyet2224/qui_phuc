@@ -1,0 +1,335 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/*
+.header,
+.banner,
+.title,
+.home-about__key h3,
+.home-about__info,
+.home-about__key--item,
+.home-about__gallery--box,
+.home-collection__gallery,
+.title-category,
+.product,
+.home-our-techniques__gallery,
+.home-millwork__item,
+.article,
+.box-center,
+.about__title,
+.about__mission--item,
+.about__milestone--img,
+.about__milestone--txt,
+.about__human--item,
+.about__human--brief,
+.about__sustainability--item,
+.about__sustainability--gallery__item,
+.about__tour--information,
+.about__tour--gallery__box,
+.breadcrumb li,
+.product__page--information, 
+.product-cate,
+.tab-menu li,
+.technique__information p,
+.technique__item--img,
+.technique__item--txt,
+.manufacturing__txt,
+.manufacturing__box--gallery,
+.millwork__infomation, 
+.millwork__item,
+.form-group,
+.brochure__item,
+.footer,
+.pagination {
+    opacity: 0;
+}
+
+.header.in-view {
+    -webkit-animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.5s forwards;
+}
+
+.banner.in-view,
+.home-about__gallery--box.in-view,
+.home-collection__gallery.in-view,
+.home-our-techniques__gallery.in-view,
+.box-center.in-view,
+.about__human--brief.in-view,
+.about__tour--gallery__box.in-view,
+.breadcrumb li.in-view,
+.tab-menu li.in-view,
+.manufacturing__box--gallery.in-view,
+.brochure__item.in-view,
+.footer.in-view {
+    -webkit-animation: fadeIn 1.2s forwards;
+    animation: fadeIn 1.2s forwards;
+}
+
+.title.in-view,
+.title-category.in-view,
+.home-about__key h3.in-view,
+.home-about__info.in-view,
+.about__title.in-view,
+.about__human--item.in-view,
+.about__sustainability--item.in-view,
+.about__tour--information.in-view,
+.product__page--information.in-view,
+.technique__information p.in-view,
+.manufacturing__txt.in-view,
+.millwork__item.in-view,
+.form-group.in-view,
+.pagination.in-view {
+    -webkit-animation: fadeInUp 1.2s forwards;
+    animation: fadeInUp 1.2s forwards;
+}
+
+.home-about__key--item.in-view,
+.about__sustainability--gallery__item.in-view,
+.technique__item:nth-child(2n + 1) .technique__item--img.in-view,
+.technique__item:nth-child(2n + 1) .technique__item--txt.in-view {
+    -webkit-animation: fadeInLeft 1.2s forwards;
+    animation: fadeInLeft 1.2s forwards;
+}
+
+.product-cate.in-view,
+.technique__item:nth-child(2n + 2) .technique__item--img.in-view,
+.technique__item:nth-child(2n + 2) .technique__item--txt.in-view,
+.millwork__infomation.in-view {
+    -webkit-animation: fadeInRight 1.2s forwards;
+    animation: fadeInRight 1.2s forwards;
+}
+
+.product.in-view,
+.article.in-view,
+.about__mission--item.in-view {
+    -webkit-animation: fadeInUp 1.2s forwards;
+    animation: fadeInUp 1.2s forwards;
+}
+
+.home-millwork__item.in-view,
+.about__milestone--img.in-view,
+.about__milestone--txt.in-view {
+    -webkit-animation: fadeInScale 1.2s forwards;
+    animation: fadeInScale 1.2s forwards;
+}
+
+.banner,
+.technique__information p {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.form-group:nth-child(1){
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+.form-group:nth-child(2){
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.form-group:nth-child(3){
+    -webkit-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+}
+.contact__box .box-center,
+.footer {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+@media screen and (min-width: 1023px) {
+
+    .home-about__key--item:nth-child(4n + 1),
+    .product:nth-child(3n + 1),
+    .article:nth-child(4n + 1),
+    .about__mission--item:nth-child(2n + 1),
+    .about__human--item:nth-child(2n + 1),
+    .about__sustainability--item:nth-child(2n + 1),
+    .about__sustainability--gallery__item:nth-child(2n + 1),
+    .technique__item--img,
+    .millwork__item:nth-child(3n + 1),
+    .brochure__item:nth-child(4n + 1) {
+        -webkit-animation-delay: 0.15s !important;
+        animation-delay: 0.15s !important;
+    }
+
+    .home-about__key--item:nth-child(4n + 2),
+    .product:nth-child(3n + 2),
+    .article:nth-child(4n + 2),
+    .about__mission--item:nth-child(2n + 2),
+    .about__human--item:nth-child(2n + 2),
+    .about__sustainability--item:nth-child(2n + 2),
+    .about__sustainability--gallery__item:nth-child(2n + 2),
+    .technique__item--txt,
+    .millwork__item:nth-child(3n + 2),
+    .brochure__item:nth-child(4n + 2) {
+        -webkit-animation-delay: 0.3s !important;
+        animation-delay: 0.3s !important;
+    }
+
+    .home-about__key--item:nth-child(4n + 3),
+    .product:nth-child(3n + 3),
+    .article:nth-child(4n + 3),
+    .millwork__item:nth-child(3n + 3),
+    .brochure__item:nth-child(4n + 3) {
+        -webkit-animation-delay: 0.45s;
+        animation-delay: 0.45s;
+    }
+
+    .home-about__key--item:nth-child(4n + 4),
+    .article:nth-child(4n + 4),
+    .brochure__item:nth-child(4n + 4) {
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+    .product-cate,
+    .millwork__infomation {
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+}
+
+
+@media screen and (max-width: 1022px) {
+    .header {
+        opacity: 1;
+    }
+    .header.in-view {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+*/

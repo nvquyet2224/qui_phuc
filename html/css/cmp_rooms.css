@@ -1,0 +1,10 @@
+.new-result.zooms {
+  row-gap: 1.875rem;
+}
+.new-result.zooms .new-txt {
+  padding-top: 1.5625rem;
+}
+.new-result.zooms .new-txt h3 {
+  text-align: center;
+  margin-bottom: 0;
+}

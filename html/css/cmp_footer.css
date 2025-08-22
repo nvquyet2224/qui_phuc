@@ -1,0 +1,208 @@
+.noScroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.footer {
+  position: relative;
+  background-color: var(--global-color-dark);
+  color: #fff;
+  padding: 4.125rem 2.5rem 0 2.5rem;
+}
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 2.1875rem;
+}
+.footer-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.footer-nav li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.footer-nav li:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.footer-nav a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.footer-nav .arrow {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer-nav .arrow svg {
+  width: 0.25rem;
+  height: 0.5rem;
+}
+.footer-logo {
+  display: block;
+  width: 11.625rem;
+  line-height: 0;
+  margin-bottom: 3.125rem;
+}
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+.footer .company-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2.1875rem;
+  line-height: 1.6;
+}
+.footer .company-contact li {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.571428571;
+  font-weight: 500;
+}
+.footer .company-contact li:not(:last-child) {
+  padding-bottom: 1.125rem;
+}
+.footer .company-contact--icon {
+  display: flex;
+  flex: 0 0 1.25rem;
+  max-width: 1.25rem;
+  height: 1.25rem;
+}
+.footer .company-contact--icon svg {
+  width: 100%;
+  height: 100%;
+}
+.footer-bot {
+  display: flex;
+  align-items: center;
+  padding: 1.375rem 0;
+}
+.footer-bot .copyright {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.footer .follow-box {
+  display: flex;
+  margin-left: auto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer .social-list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.footer .social-list a {
+  display: block;
+  line-height: 0;
+  width: 2rem;
+}
+.footer .social-list a img {
+  width: 100%;
+  height: auto;
+}
+.footer-widget {
+  position: fixed;
+  z-index: 10;
+  bottom: 2.8125rem;
+  right: 1.0625rem;
+}
+.footer-widget .widget-icon {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 12px;
+}
+.footer-widget .widget-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding: 2.5rem 0.9375rem 0 0.9375rem;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    padding-bottom: 1.625rem;
+  }
+  .footer-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer-nav {
+    padding-bottom: 1.625rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 1.875rem;
+  }
+  .footer-logo {
+    margin-bottom: 1.875rem;
+  }
+  .footer .company.current .company-name .arrow {
+    transform: rotate(0deg);
+  }
+  .footer .company.current .company-contact {
+    opacity: 1;
+    margin-top: 1.875rem;
+  }
+  .footer .company-name {
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .footer .company-name .arrow {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    transition: rotate 0.3s ease;
+  }
+  .footer .company-name .arrow svg {
+    width: 0.25rem;
+    height: 0.5rem;
+  }
+  .footer .company-contact {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: height 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: height 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .footer-bot {
+    flex-direction: column-reverse;
+  }
+  .footer-bot .follow-box {
+    padding-top: 1.25rem;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 1.25rem;
+  }
+  .footer-bot .copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1.666666667;
+  }
+  .footer-widget {
+    bottom: 70px;
+    right: 10px;
+  }
+  .footer-widget .widget-icon {
+    margin-bottom: 5px;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,116 @@
+.banner {
+  width: 100%;
+}
+.banner_wrap {
+  position: relative;
+}
+.banner_wrap::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 52.569444444%;
+}
+.banner_wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 10.5%, rgba(0, 0, 0, 0) 21.28%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.banner img,
+.banner video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+}
+.banner_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2.5rem;
+  padding-bottom: 4.625rem;
+}
+.banner_detail {
+  width: 56.4375rem;
+  text-align: center;
+}
+.banner_detail .sub-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 1.9375rem;
+}
+.banner_detail .list-banner {
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+.banner_detail .list-banner-item {
+  display: flex;
+  column-gap: 17px;
+  align-items: center;
+}
+.banner_detail .list-banner-item svg {
+  width: 2.1875rem;
+  height: 5rem;
+}
+.banner_detail .list-banner-item .title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner_detail .sub-title strong {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner {
+    width: 100%;
+  }
+  .banner_wrap::before {
+    padding-top: 206.666666667%;
+  }
+  .banner_content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    padding-bottom: 2.375rem;
+  }
+  .banner_detail .sub-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem;
+  }
+  .banner_detail .list-banner {
+    column-gap: 0.75rem;
+  }
+  .banner_detail .list-banner-item {
+    column-gap: 1px;
+  }
+  .banner_detail .list-banner-item svg {
+    width: 1.125rem;
+    height: 2.5rem;
+  }
+  .banner_detail .list-banner-item .title {
+    font-size: 0.75rem;
+    text-transform: none;
+  }
+}

@@ -1,0 +1,33 @@
+.inspiration {
+  background: #C7E1FF;
+  padding: 4.125rem 2.5rem;
+}
+.inspiration.bg-white {
+  background-color: #fff;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+.inspiration .title_block {
+  margin-bottom: 1.875rem;
+}
+.inspiration-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .inspiration {
+    background: #C7E1FF;
+    padding: 4.125rem 0.9375rem;
+  }
+  .inspiration.bg-white {
+    padding-top: 4.125rem;
+    padding-bottom: 4.125rem;
+  }
+  .inspiration-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}

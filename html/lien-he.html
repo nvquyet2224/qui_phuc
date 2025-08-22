@@ -21,8 +21,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Qui Phúc">
     <link rel="icon" href="images/favicon.png">
-    <link href="css/critical.css" rel="preload stylesheet" as="style">
-    <link rel="stylesheet" href="css/contact.css">
+    <link href="css/cmp_reset.css" rel="preload stylesheet" as="style">
+    <link href="css/cmp_critical.css" rel="preload stylesheet" as="style">
+    <link href="css/cmp_header.css" rel="preload stylesheet" as="style">
+    <link href="css/cmp_common.css" rel="preload stylesheet" as="style">
+    <link href="css/cmp_contact_block.css" rel="preload stylesheet" as="style">
+    <link href="css/cmp_regiter_promotion.css" rel="preload stylesheet" as="style">
+    <link href="css/cmp_footer.css" rel="preload stylesheet" as="style">
+
+    <!-- <link href="css/critical.css" rel="preload stylesheet" as="style">
+    <link rel="stylesheet" href="css/contact.css"> -->
 </head>
 
 <body data-page="news">
@@ -333,23 +341,13 @@
   </symbol>
   <symbol
     id="symbol-vector"
-    width="8"
-    height="14"
-    viewBox="0 0 8 14"
+    viewBox="0 0 6 10"
     fill="none"
   >
-    <path
-      d="M1 13L7 7L1 1"
-      stroke="black"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+  <path d="M1.00003 1C1.00003 1 4.99999 3.94596 5 5.00003C5.00001 6.05411 1 9 1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
   <symbol
     id="symbol-vector-left"
-    width="20"
-    height="10"
     viewBox="0 0 20 10"
     fill="none"
   >
@@ -883,684 +881,28 @@
             <div class="logo">
                 <a href="./"><img width="186" height="49" fetcpriority="high" src="images/logo.svg" alt="Qui Phúc"></a>
             </div>
-            <nav class="nav">
-                <div class="nav-top md">
-                    <div class="logo">
-                        <a href="./"><img width="186" height="49" fetcpriority="high" src="images/logo.svg"
-                                alt="Qui Phúc"></a>
-                    </div>
-                    <div class="close-menu">
-                        <svg>
-                            <use xlink:href="#icon-close"></use>
-                        </svg>
-                    </div>
-                </div>
+            <nav class="nav pc">
                 <ul class="nav-menu flex">
                     <li data-page="san-pham" class="nav-item">
-                        <a href="san-pham.html" class="hide-md"><span>Sản phẩm</span></a>
-                        <div class="nav-link dropdown-toggle md">
-                            <span class="title">Sản phẩm</span>
-                            <svg class="md">
-                                <use xlink:href="#symbol-vector">
-                                </use>
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu--customize">
-                            <div class="container">
-                                <div class="dropdown-back md">
-                                    <div class="back-menu">
-                                        <span class="arrow">
-                                            <svg>
-                                                <use xlink:href="#symbol-vector-left">
-                                                </use>
-                                            </svg>
-                                        </span>
-                                        <span class="back-txt">Sản phẩm</span>
-                                    </div>
-                                    <div class="close-menu">
-                                        <svg>
-                                            <use xlink:href="#icon-close"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <ul class="dropdown-menu--inner">
-                                    <li class="dropdown-menu--subitem accordion">
-                                        <div class="dropdown-menu--title accordion-header">
-                                            <span class="title">Bàn</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list accordion-body" style="--data-h: 0px">
-                                            <ul class=" accordion-detail">
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        <span class="title">Bàn ăn</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Bàn cafe
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Bàn học tập
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Bàn văn phòng
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Bàn phòng khách
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem accordion">
-                                        <div class="dropdown-menu--title accordion-header">
-                                            <span class="title">Ghế</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list accordion-body" style="--data-h: 0px">
-                                            <ul class="accordion-detail">
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế nhựa
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế văn phòng
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế học tập
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế phòng khách
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế cafe
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế nhà hàng, quán ăn
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ghế phòng ăn
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem accordion">
-                                        <div class="dropdown-menu--title accordion-header">
-                                            <span class="title">Tủ nhựa</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list accordion-body" style="--data-h: 0px">
-                                            <ul class="accordion-detail">
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Tủ kéo
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Tủ treo
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Tủ 2 tầng
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Tủ 3 tầng
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Tủ 4 tầng
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Tủ 5 tầng
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem accordion">
-                                        <div class="dropdown-menu--title accordion-header">
-                                            <span class="title">Gia dụng</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list accordion-body" style="--data-h: 0px">
-                                            <ul class="accordion-detail">
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Kệ inox
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Sào inox
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Thang inox
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Móc treo
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Ống đủa
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Máng khăn
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Thang & ghế cao
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Kệ bàn ủi
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem accordion">
-                                        <div class="dropdown-menu--title accordion-header">
-                                            <span class="title">Võng & Ghế thư giãn</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list accordion-body" style="--data-h: 0px">
-                                            <ul class=" accordion-detail">
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Deli
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Dona
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Win
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem accordion">
-                                        <div class="dropdown-menu--title accordion-header">
-                                            <span class="title">Giường</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list accordion-body" style="--data-h: 0px">
-                                            <ul class="accordion-detail">
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Giường inox
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Giường sắt
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Giường tầng
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Giường mầm non
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Giường y tế
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem">
-                                        <div class="dropdown-menu--title">
-                                            <span class="title">Sản phẩm ngoài trời</span>
-                                            <span class="md icon-toggle">
-                                                <svg class="icon-increase">
-                                                    <use xlink:href="#icon-increase"></use>
-                                                </svg>
-                                                <svg class="icon-decrease">
-                                                    <use xlink:href="#icon-decrease"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="container-list" style="--data-h: 0px">
-                                            <ul>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Xích đu
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="san-pham.html" class="dropdown-menu--link">
-                                                        Sào phơi
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="dropdown-menu--subitem is-group">
-                                        <a href="san-pham.html" class="dropdown-menu--title">
-                                            <span class="title">Sản phẩm khác</span>
-                                        </a>
-                                        <a href="khong-gian.html" class="dropdown-menu--title">
-                                            <span class="title">Lookbook Qui Phúc</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                                <div class="highlight-img hide-md">
-                                    <img width="256" height="162" class="lazy-event"
-                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                        data-src="images/highlight-menu.png" alt="Qui Phúc">
-                                </div>
-                            </div>
-                        </div>
+                        <span class="title">Sản phẩm</span>
                     </li>
                     <li data-page="khong-gian" class="nav-item">
-                        <a href="khong-gian.html" class="hide-md"><span>Không gian</span></a>
-                        <div class="nav-link dropdown-toggle md">
-                            <span class="title">Không gian</span>
-                            <svg class="md">
-                                <use xlink:href="#symbol-vector">
-                                </use>
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu">
-                            <div class="container">
-                                <div class="dropdown-back md">
-                                    <div class="back-menu">
-                                        <span class="arrow">
-                                            <svg>
-                                                <use xlink:href="#symbol-vector-left">
-                                                </use>
-                                            </svg>
-                                        </span>
-                                        <span class="back-txt">Không gian</span>
-                                    </div>
-                                    <div class="close-menu">
-                                        <svg>
-                                            <use xlink:href="#icon-close"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="push-content" data-item="6" style="--item:6">
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/khong-gian-menu1.jpg" alt="Phòng bếp" />
-                                        </div>
-                                        <p>Phòng bếp</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/khong-gian-menu2.jpg" alt="Phòng khách" />
-                                        </div>
-                                        <p>Phòng khách</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/khong-gian-menu3.jpg" alt=">Phòng ngủ" />
-                                        </div>
-                                        <p>Phòng ngủ</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/khong-gian-menu4.jpg" alt="Phòng làm việc" />
-                                        </div>
-                                        <p>Phòng làm việc</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/khong-gian-menu5.jpg" alt="Phòng tắm" />
-                                        </div>
-                                        <p>Phòng tắm</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/khong-gian-menu6.jpg" alt="Ngoài trời" />
-                                        </div>
-                                        <p>Ngoài trời</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="title">Không gian</span>
                     </li>
                     <li data-page="ve-qui-phuc" class="nav-item">
-                        <a href="ve-qui-phuc.html" class="hide-md"><span>Về Qui Phúc</span></a>
-                        <div class="nav-link dropdown-toggle md">
-                            <span class="title">Về Qui Phúc</span>
-                            <svg class="md">
-                                <use xlink:href="#symbol-vector">
-                                </use>
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu">
-                            <div class="container">
-                                <div class="dropdown-back md">
-                                    <div class="back-menu">
-                                        <span class="arrow">
-                                            <svg>
-                                                <use xlink:href="#symbol-vector-left">
-                                                </use>
-                                            </svg>
-                                        </span>
-                                        <span class="back-txt">Về Qui Phúc</span>
-                                    </div>
-                                    <div class="close-menu">
-                                        <svg>
-                                            <use xlink:href="#icon-close"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="push-content" data-item="2" style="--item:2">
-                                    <a class="push-content--item" href="ve-qui-phuc.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/ve-qui-phuc-menu1.jpg" alt="Về Qui Phúc" />
-                                        </div>
-                                        <p>Về Qui Phúc</p>
-                                    </a>
-                                    <a class="push-content--item" href="tin-tuc.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/ve-qui-phuc-menu2.jpg" alt="Tin tức" />
-                                        </div>
-                                        <p>Tin tức</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="title">Về Qui Phúc</span>
                     </li>
                     <li data-page="danh-cho-doanh-nghiep" class="nav-item">
-                        <a href="danh-cho-doanh-nghiep.html" class="hide-md"><span>Dành cho doanh nghiệp</span></a>
-                        <div class="nav-link dropdown-toggle md">
-                            <span class="title">Dành cho doanh nghiệp</span>
-                            <svg class="md">
-                                <use xlink:href="#symbol-vector">
-                                </use>
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu">
-                            <div class="container">
-                                <div class="dropdown-back md">
-                                    <div class="back-menu">
-                                        <span class="arrow">
-                                            <svg>
-                                                <use xlink:href="#symbol-vector-left">
-                                                </use>
-                                            </svg>
-                                        </span>
-                                        <span class="back-txt">Dành cho doanh nghiệp</span>
-                                    </div>
-                                    <div class="close-menu">
-                                        <svg>
-                                            <use xlink:href="#icon-close"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="push-content" data-item="7" style="--item:7">
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu1.jpg"
-                                                alt="Nhà hàng, quán ăn, quán cà phê" />
-                                        </div>
-                                        <p>Nhà hàng, quán ăn, quán cà phê</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu2.jpg" alt="Trường học" />
-                                        </div>
-                                        <p>Trường học</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu3.jpg" alt="Văn phòng" />
-                                        </div>
-                                        <p>Văn phòng</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu4.jpg" alt="Nhà ở" />
-                                        </div>
-                                        <p>Nhà ở</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu5.jpg" alt="Bệnh viện, công cộng" />
-                                        </div>
-                                        <p>Bệnh viện, công cộng</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu6.jpg" alt="Sản phẩm thư giãn" />
-                                        </div>
-                                        <p>Sản phẩm thư giãn</p>
-                                    </a>
-                                    <a class="push-content--item" href="khong-gian-chi-tiet.html">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/doanh-nghiep-menu7.jpg" alt="Gia dụng Inox" />
-                                        </div>
-                                        <p>Gia dụng Inox</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="title">Dành cho doanh nghiệp</span>
                     </li>
                     <li data-page="khuyen-mai">
-                        <a href="khuyen-mai.html" class="normal-link"><span>Khuyến mãi</span> <svg class="md">
-                                <use xlink:href="#symbol-vector">
-                                </use>
-                            </svg></a>
+                        <a href="khuyen-mai.html" class="normal-link"><span>Khuyến mãi</span></a>
                     </li>
                     <li data-page="e-catalogue" class="nav-item">
-                        <a href="e-catalogue.html" class="hide-md"><span>E-Catalogue</span></a>
-                        <div class="nav-link dropdown-toggle md">
-                            <span class="title">E-Catalogue</span>
-                            <svg class="md">
-                                <use xlink:href="#symbol-vector">
-                                </use>
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu">
-                            <div class="container">
-                                <div class="dropdown-back md">
-                                    <div class="back-menu">
-                                        <span class="arrow">
-                                            <svg>
-                                                <use xlink:href="#symbol-vector-left">
-                                                </use>
-                                            </svg>
-                                        </span>
-                                        <span class="back-txt">E-Catalogue</span>
-                                    </div>
-                                    <div class="close-menu">
-                                        <svg>
-                                            <use xlink:href="#icon-close"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="push-content" data-item="2" style="--item:2">
-                                    <a class="push-content--item" href="https://tdic-jsc.com/blogs/e-catalogue/dr-g"
-                                        target="_blank">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/catalogue-nhua.jpg" alt="Catalogue Nhựa" />
-                                        </div>
-                                        <p>Catalogue Nhựa</p>
-                                    </a>
-                                    <a class="push-content--item" href="https://tdic-jsc.com/blogs/e-catalogue/dr-g"
-                                        target="_blank">
-                                        <div class="image-push-wrapper zoom-img">
-                                            <img width="193" height="141" class="lazy-event"
-                                                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                                data-src="images/catalogue-inox.jpg" alt="Catalogue Inox" />
-                                        </div>
-                                        <p>Catalogue Inox</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="title">E-Catalogue</span>
                     </li>
                 </ul>
-                <div class="bg-menu"></div>
                 <div class="bg-menu-overlay"></div>
-                <div class="nav-bot md">
-                    <div class="support">
-                        <ul class="support-list">
-                            <li><a href="mailto:info@quiphuc.com">
-                                    <span class="support-icon">
-                                        <svg>
-                                            <use xlink:href="#icon-email"></use>
-                                        </svg>
-                                    </span>info@quiphuc.com</a>
-                            </li>
-                            <li><a href="tel:1900638386">
-                                    <span class="support-icon">
-                                        <svg>
-                                            <use xlink:href="#icon-hotline"></use>
-                                        </svg>
-                                    </span>1900638386</a>
-                            </li>
-                        </ul>
-                        <div class="select select-language">
-                            <div class="select-header">
-                                <span class="select-selected">VI</span>
-                                <span class="select-arrow">
-                                    <svg>
-                                        <use xlink:href="#icon-chevron-down"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="select-box">
-                                <ul>
-                                    <li class="selected"><a href="./">Tiếng Việt</a></li>
-                                    <li data-value="en"><a href="./">English</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </nav>
             <div class="header-action">
                 <div class="search">
@@ -1601,7 +943,7 @@
                     <div class="select-box">
                         <ul>
                             <li data-value="Thông tin tài khoản">
-                                <a href="profile.html">
+                                <a href="profile.html?current=1">
                                     <svg>
                                         <use xlink:href="#icon-user"></use>
                                     </svg>
@@ -1609,7 +951,7 @@
                                 </a>
                             </li>
                             <li data-value="Lịch sử mua hàng">
-                                <a href="profile.html">
+                                <a href="profile.html?current=2">
                                     <svg>
                                         <use xlink:href="#icon-history"></use>
                                     </svg>
@@ -1617,7 +959,7 @@
                                 </a>
                             </li>
                             <li data-value="Địa chỉ giao hàng">
-                                <a href="profile.html">
+                                <a href="profile.html?current=3">
                                     <svg>
                                         <use xlink:href="#icon-address"></use>
                                     </svg>
@@ -1637,8 +979,8 @@
                 </div>
             </div>
             <div class="search_popup">
-                <div class="search_head md">
-                    <h2 class="search_head-title">
+                <div class="search_head">
+                    <h2 class="search_head-title md">
                         Tìm kiếm
                     </h2>
                     <div class="search-but action-icon search-but--close" id="icon-close-search">
@@ -1968,6 +1310,1887 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="side">
+        <nav class="side-box">
+            <div class="side-top">
+                <div class="logo">
+                    <a href="./"><img width="186" height="49" fetcpriority="high" src="images/logo.svg"
+                            alt="Qui Phúc"></a>
+                </div>
+                <div class="close-menu">
+                    <svg>
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="side-content">
+                <ul class="side-menu">
+                    <li data-page="san-pham" class="side-item">
+                        <div class="dropdown-toggle">
+                            <span class="title">Sản phẩm</span>
+                            <svg>
+                                <use xlink:href="#symbol-vector"></use>
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="container">
+                                <div class="dropdown-back">
+                                    <div class="back-menu">
+                                        <span class="arrow">
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="back-txt">Trở lại</span>
+                                    </div>
+                                    <div class="close-menu">
+                                        <svg>
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu--inner">
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Bàn</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            <span class="title">Bàn ăn</span>
+                                                        </a>
+                                                        <ul>
+                                                            <li><a href="san-pham.html">Super</a></li>
+                                                            <li><a href="san-pham.html">Deli</a></li>
+                                                            <li><a href="san-pham.html">Felix</a></li>
+                                                            <li><a href="san-pham.html">Dona</a></li>
+                                                            <li><a href="san-pham.html">Win</a></li>
+                                                            <li><a href="san-pham.html">Tấn Thành</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Bàn cafe
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Bàn học tập
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Bàn văn phòng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Bàn phòng khách
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Ghế</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế nhựa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế văn phòng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế học tập
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế phòng khách
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế cafe
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế nhà hàng, quán ăn
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế phòng ăn
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Tủ nhựa</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <div class="side-caption">Theo công năng</div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ kéo
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ treo
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="side-caption has-border">Theo số tầng</div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ 2 tầng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ 3 tầng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ 4 tầng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ 5 tầng
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="side-caption has-border">Theo bộ sưu tập</div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Deli Max
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ AE
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Louis
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Royal
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Paris
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Kid
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Kid_Tủ Bite
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Tủ Lucky
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Gia dụng</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Kệ inox
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Sào inox
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Thang inox
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Móc treo
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ống đủa
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Máng khăn
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Thang & ghế cao
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Kệ bàn ủi
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Võng & Ghế thư giãn</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Võng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Ghế thư giãn
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Giường</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Giường inox
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Giường sắt
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Giường tầng
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Giường mầm non
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Giường y tế
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem">
+                                        <div class="dropdown-menu--title">
+                                            <span class="title">Sản phẩm ngoài trời</span>
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="container-list" style="--data-h: 0px">
+                                            <div class="dropdown-back">
+                                                <div class="back-menu">
+                                                    <span class="arrow">
+                                                        <svg>
+                                                            <use xlink:href="#symbol-vector"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-txt">Trở lại</span>
+                                                </div>
+                                                <div class="close-menu">
+                                                    <svg>
+                                                        <use xlink:href="#icon-close"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="container-list--wrap">
+                                                <ul>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Xích đu
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="san-pham.html" class="dropdown-menu--link">
+                                                            Sào phơi
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown-menu--subitem is-group">
+                                        <a href="san-pham.html" class="dropdown-menu--title">
+                                            <span class="title">Sản phẩm khác</span>
+                                        </a>
+                                        <a href="khong-gian.html" class="dropdown-menu--title">
+                                            <span class="title">Lookbook Qui Phúc</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-page="khong-gian" class="side-item">
+                        <div class="dropdown-toggle">
+                            <span class="title">Không gian</span>
+                            <svg>
+                                <use xlink:href="#symbol-vector">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="container">
+                                <div class="dropdown-back">
+                                    <div class="back-menu">
+                                        <span class="arrow">
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="back-txt">Trở lại</span>
+                                    </div>
+                                    <div class="close-menu">
+                                        <svg>
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu--inner">
+                                    <div class="goto-list">
+                                        <span>Không gian</span>
+                                        <a href="khong-gian.html">Xem tất cả không gian</a>
+                                    </div>
+                                    <div class="push-content" data-item="6" style="--item:6">
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/khong-gian-menu1.jpg" alt="Phòng bếp" />
+                                                </div>
+                                                <p>Phòng bếp</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế Inox
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế Nhựa
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Gia dụng bếp
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Kệ sào inox
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/khong-gian-menu2.jpg" alt="Phòng khách" />
+                                                </div>
+                                                <p>Phòng khách</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn Revo
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế phòng khách
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Võng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Ghế thư giãn
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/khong-gian-menu3.jpg" alt=">Phòng ngủ" />
+                                                </div>
+                                                <p>Phòng ngủ</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Tủ nhựa
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Giường
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/khong-gian-menu4.jpg" alt="Phòng làm việc" />
+                                                </div>
+                                                <p>Phòng làm việc</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn văn phòng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Ghế văn phòng
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/khong-gian-menu5.jpg" alt="Phòng tắm" />
+                                                </div>
+                                                <p>Phòng tắm</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Gia dụng phòng tắm
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Móc treo
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Kệ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/khong-gian-menu6.jpg" alt="Ngoài trời" />
+                                                </div>
+                                                <p>Ngoài trời</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế cafe
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế ngoài trời
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Sào phơi
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-page="ve-qui-phuc" class="side-item">
+                        <div class="dropdown-toggle">
+                            <span class="title">Về Qui Phúc</span>
+                            <svg>
+                                <use xlink:href="#symbol-vector">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="container">
+                                <div class="dropdown-back">
+                                    <div class="back-menu">
+                                        <span class="arrow">
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="back-txt">Trở lại</span>
+                                    </div>
+                                    <div class="close-menu">
+                                        <svg>
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu--inner">
+                                    <div class="push-content" data-item="2" style="--item:2">
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="ve-qui-phuc.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/ve-qui-phuc-menu1.jpg" alt="Về Qui Phúc" />
+                                                </div>
+                                                <p>Về Qui Phúc</p>
+                                            </a>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="tin-tuc.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/ve-qui-phuc-menu2.jpg" alt="Tin tức" />
+                                                </div>
+                                                <p>Tin tức</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-page="danh-cho-doanh-nghiep" class="side-item">
+                        <div class="dropdown-toggle">
+                            <span class="title">Dành cho doanh nghiệp</span>
+                            <svg>
+                                <use xlink:href="#symbol-vector">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="container">
+                                <div class="dropdown-back">
+                                    <div class="back-menu">
+                                        <span class="arrow">
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="back-txt">Trở lại</span>
+                                    </div>
+                                    <div class="close-menu">
+                                        <svg>
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu--inner">
+                                    <div class="goto-list">
+                                        <span>DÀNH CHO DOANH NGHIỆP</span>
+                                        <a href="danh-cho-doanh-nghiep.html">Xem giới thiệu</a>
+                                    </div>
+
+                                    <div class="side-caption full">Theo sản phẩm</div>
+                                    <ul>
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Bàn</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                <span class="title">Bàn ăn</span>
+                                                            </a>
+                                                            <ul>
+                                                                <li><a href="san-pham-doanh-nghiep.html">Super</a></li>
+                                                                <li><a href="san-pham-doanh-nghiep.html">Deli</a></li>
+                                                                <li><a href="san-pham-doanh-nghiep.html">Felix</a></li>
+                                                                <li><a href="san-pham-doanh-nghiep.html">Dona</a></li>
+                                                                <li><a href="san-pham-doanh-nghiep.html">Win</a></li>
+                                                                <li><a href="san-pham-doanh-nghiep.html">Tấn Thành</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Bàn cafe
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Bàn học tập
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Bàn văn phòng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Bàn phòng khách
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Ghế</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế nhựa
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế văn phòng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế học tập
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế phòng khách
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế cafe
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế nhà hàng, quán ăn
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế phòng ăn
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Tủ nhựa</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <div class="side-caption">Theo công năng</div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ kéo
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ treo
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="side-caption has-border">Theo số tầng</div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ 2 tầng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ 3 tầng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ 4 tầng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ 5 tầng
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="side-caption has-border">Theo bộ sưu tập</div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Deli Max
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ AE
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Louis
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Royal
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Paris
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Kid
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Kid_Tủ Bite
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Tủ Lucky
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Gia dụng</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Kệ inox
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Sào inox
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Thang inox
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Móc treo
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ống đủa
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Máng khăn
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Thang & ghế cao
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Kệ bàn ủi
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Võng & Ghế thư giãn</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Võng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Ghế thư giãn
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Giường</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Giường inox
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Giường sắt
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Giường tầng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Giường mầm non
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Giường y tế
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem">
+                                            <div class="dropdown-menu--title">
+                                                <span class="title">Sản phẩm ngoài trời</span>
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Xích đu
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham-doanh-nghiep.html"
+                                                                class="dropdown-menu--link">
+                                                                Sào phơi
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown-menu--subitem is-group">
+                                            <a href="san-pham.html" class="dropdown-menu--title">
+                                                <span class="title">Sản phẩm khác</span>
+                                            </a>
+                                            <a href="khong-gian.html" class="dropdown-menu--title">
+                                                <span class="title">Lookbook Qui Phúc</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="side-caption has-border full">Theo không gian</div>
+                                    <div class="push-content" data-item="7" style="--item:7">
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu1.jpg"
+                                                        alt="Nhà hàng, quán ăn, quán cà phê" />
+                                                </div>
+                                                <p>Nhà hàng, quán ăn, quán cà phê</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế nhà hàng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế cafe
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Kệ
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Xe đẩy
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu2.jpg" alt="Trường học" />
+                                                </div>
+                                                <p>Trường học</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế học sinh
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế sinh viên
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Trường mẫu giáo
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Giường KTX
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu3.jpg" alt="Văn phòng" />
+                                                </div>
+                                                <p>Văn phòng</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bàn ghế văn phòng
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu4.jpg" alt="Nhà ở" />
+                                                </div>
+                                                <p>Nhà ở</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Không gian theo EU
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu5.jpg"
+                                                        alt="Bệnh viện, công cộng" />
+                                                </div>
+                                                <p>Bệnh viện, công cộng</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Giường y tế
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Bằng chờ
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu6.jpg"
+                                                        alt="Sản phẩm thư giãn" />
+                                                </div>
+                                                <p>Sản phẩm thư giãn</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Võng
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Giường
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Ghế thư giãn
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Ghế bố
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item" href="khong-gian-chi-tiet.html">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/doanh-nghiep-menu7.jpg" alt="Gia dụng Inox" />
+                                                </div>
+                                                <p>Gia dụng Inox</p>
+                                            </a>
+                                            <div class="dropdown-menu--title">
+                                                <svg>
+                                                    <use xlink:href="#symbol-vector"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="container-list" style="--data-h: 0px">
+                                                <div class="dropdown-back">
+                                                    <div class="back-menu">
+                                                        <span class="arrow">
+                                                            <svg>
+                                                                <use xlink:href="#symbol-vector"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="back-txt">Trở lại</span>
+                                                    </div>
+                                                    <div class="close-menu">
+                                                        <svg>
+                                                            <use xlink:href="#icon-close"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="container-list--wrap">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Kệ
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Sào
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Xích đu
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="san-pham.html" class="dropdown-menu--link">
+                                                                Máng khăn
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-page="khuyen-mai">
+                        <a href="khuyen-mai.html" class="link-normal"><span>Khuyến mãi</span> <svg>
+                                <use xlink:href="#symbol-vector">
+                                </use>
+                            </svg></a>
+                    </li>
+                    <li data-page="e-catalogue" class="side-item">
+                        <div class="dropdown-toggle">
+                            <span class="title">E-Catalogue</span>
+                            <svg>
+                                <use xlink:href="#symbol-vector">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="container">
+                                <div class="dropdown-back">
+                                    <div class="back-menu">
+                                        <span class="arrow">
+                                            <svg>
+                                                <use xlink:href="#symbol-vector"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="back-txt">Trở lại</span>
+                                    </div>
+                                    <div class="close-menu">
+                                        <svg>
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu--inner">
+                                    <div class="push-content" data-item="2" style="--item:2">
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item"
+                                                href="https://tdic-jsc.com/blogs/e-catalogue/dr-g" target="_blank">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/catalogue-nhua.jpg" alt="Catalogue Nhựa" />
+                                                </div>
+                                                <p>Catalogue Nhựa</p>
+                                            </a>
+                                        </div>
+                                        <div class="push-content--wrap">
+                                            <a class="push-content--item"
+                                                href="https://tdic-jsc.com/blogs/e-catalogue/dr-g" target="_blank">
+                                                <div class="image-push-wrapper zoom-img">
+                                                    <img width="193" height="141" class="lazy-event"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        data-src="images/catalogue-inox.jpg" alt="Catalogue Inox" />
+                                                </div>
+                                                <p>Catalogue Inox</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="side-bot md">
+                    <div class="support">
+                        <ul class="support-list">
+                            <li><a href="mailto:info@quiphuc.com">
+                                    <span class="support-icon">
+                                        <svg>
+                                            <use xlink:href="#icon-email"></use>
+                                        </svg>
+                                    </span>info@quiphuc.com</a>
+                            </li>
+                            <li><a href="tel:1900638386">
+                                    <span class="support-icon">
+                                        <svg>
+                                            <use xlink:href="#icon-hotline"></use>
+                                        </svg>
+                                    </span>1900638386</a>
+                            </li>
+                        </ul>
+                        <div class="select select-language">
+                            <div class="select-header">
+                                <span class="select-selected">VI</span>
+                                <span class="select-arrow">
+                                    <svg>
+                                        <use xlink:href="#icon-chevron-down"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="select-box">
+                                <ul>
+                                    <li class="selected"><a href="./">Tiếng Việt</a></li>
+                                    <li data-value="en"><a href="./">English</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
 </header>
                 <div class="main">
                     <div class="breadcrumb">

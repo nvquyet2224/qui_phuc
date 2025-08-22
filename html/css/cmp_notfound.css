@@ -1,0 +1,42 @@
+.not-found {
+  padding: 2.5rem 2.5rem 7.5rem 2.5rem;
+}
+.not-found_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.not-found-txt {
+  flex: 0 0 40rem;
+  max-width: 40rem;
+}
+.not-found-txt .link-but {
+  margin-top: 2.25rem;
+}
+.not-found-img {
+  flex: 0 0 40rem;
+  max-width: 40rem;
+  line-height: 0;
+}
+.not-found-img img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .not-found {
+    padding: 0;
+    margin-bottom: 3.75rem;
+  }
+  .not-found-txt, .not-found-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .not-found-txt {
+    padding: 4.375rem 1rem;
+  }
+  .not-found-txt .link-but {
+    margin-top: 1.875rem;
+  }
+}

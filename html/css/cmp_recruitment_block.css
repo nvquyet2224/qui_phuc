@@ -1,0 +1,99 @@
+.recruitment {
+  margin-bottom: 7.5rem;
+  padding: 0 2.5rem;
+}
+.recruitment_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recruitment_action {
+  flex: 0 0 27.8125rem;
+  max-width: 27.8125rem;
+}
+.recruitment_result {
+  flex: 0 0 52.1875rem;
+  max-width: 52.1875rem;
+}
+.recruitment-sort, .recruitment-list {
+  width: 100%;
+  height: auto;
+}
+.recruitment-sort {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+.recruitment-sort .sort {
+  margin-left: auto;
+}
+.recruitment-total {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.recruitment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 1.875rem;
+}
+.recruitment-item {
+  position: relative;
+  width: 100%;
+  border: 1px solid #D0D5DD;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+.recruitment .new h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.recruitment .new .salary {
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #F58720;
+}
+.recruitment .new-meta {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+.recruitment .new-meta strong {
+  font-weight: 600;
+}
+.recruitment .new .link-but {
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .recruitment {
+    padding: 0;
+    margin-bottom: 3.75rem;
+  }
+  .recruitment_action, .recruitment_result {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .recruitment_result {
+    padding: 1rem;
+  }
+  .recruitment-sort, .recruitment-list {
+    width: 100%;
+    height: auto;
+  }
+  .recruitment-total {
+    font-size: 1rem;
+  }
+  .recruitment .new h3 {
+    font-size: 0.875rem;
+  }
+  .recruitment .new .salary {
+    display: block;
+    position: static;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,320 @@
+.kitchen_wrap {
+  position: relative;
+}
+.kitchen_banner {
+  position: relative;
+}
+.kitchen_banner--item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  line-height: 0;
+}
+.kitchen_banner--item.current {
+  position: relative;
+  left: auto;
+  top: auto;
+  opacity: 1;
+}
+.kitchen_banner--item img {
+  width: 100%;
+  height: auto;
+}
+.kitchen_banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(52.84% 52.84% at 50% 47.16%, rgba(255, 255, 255, 0) 34.13%, rgba(0, 0, 0, 0.54) 100%);
+}
+.kitchen_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 2.5rem;
+  padding-bottom: 4.625rem;
+  z-index: 1;
+}
+.kitchen_detail {
+  position: relative;
+  width: 28rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.kitchen_detail--item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  pointer-events: none;
+}
+.kitchen_detail--item.current {
+  position: relative;
+  left: auto;
+  top: auto;
+  opacity: 1;
+  pointer-events: all;
+}
+.kitchen_detail .title_block {
+  display: inline-flex;
+  gap: 11px;
+}
+.kitchen_detail .title_block .sub-title,
+.kitchen_detail .title_block h2 {
+  color: #fff;
+}
+.kitchen_detail .title_block,
+.kitchen_detail p {
+  margin-bottom: 1.25rem;
+}
+.kitchen_pot {
+  display: none;
+}
+.kitchen_pot.current {
+  display: block;
+}
+.kitchen_pot--item {
+  position: absolute;
+  left: var(--left, 0);
+  top: var(--top, 0);
+  z-index: 4;
+  cursor: pointer;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.kitchen_pot--item .pot-but {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid var(--global-color);
+  color: var(--global-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.kitchen_pot--item .pot-but:hover, .kitchen_pot--item .pot-but.active {
+  background-color: var(--global-color);
+  color: #fff;
+}
+.kitchen_pot--item .pot-but svg {
+  width: 1rem;
+  height: 1rem;
+}
+.kitchen_pot--item .pot-card {
+  position: absolute;
+  width: 15.6875rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.kitchen_pot--item .pot-card .card {
+  padding: 1.5625rem;
+}
+.kitchen_pot--item .pot-card .card-img {
+  width: 8.1875rem;
+  height: auto;
+}
+.kitchen_pot--item .pot-card .card-txt h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.kitchen_pot--item .pot-card .card-txt .price {
+  font-size: 1rem;
+}
+.kitchen_pot--item.down .pot-card {
+  top: 100%;
+  padding-top: 5px;
+}
+.kitchen_pot--item.up .pot-card {
+  bottom: 100%;
+  padding-bottom: 5px;
+}
+.kitchen_pot--item.right .pot-card {
+  -webkit-transform: translateX(-94%);
+  transform: translateX(-94%);
+}
+.kitchen_pot--item.left .pot-card {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.kitchen_pot--item:hover .pot-card {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.kitchen_thumb {
+  width: 27.75rem;
+  position: absolute;
+  right: 2.5rem;
+  bottom: 3.625rem;
+  z-index: 3;
+}
+.kitchen_thumb .thumbSlider {
+  padding-bottom: 1.25rem;
+}
+.kitchen_thumb--img {
+  aspect-ratio: 142/104;
+  line-height: 0;
+  cursor: pointer;
+}
+.kitchen_thumb--img img {
+  width: 100%;
+  height: 100%;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.kitchen_thumb .swiper-horizontal > .swiper-scrollbar {
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+.kitchen_thumb .swiper-button-prev,
+.kitchen_thumb .swiper-button-next {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 1 !important;
+  color: #fff;
+  top: auto;
+  bottom: -0.625rem;
+}
+.kitchen_thumb .swiper-button-prev::after,
+.kitchen_thumb .swiper-button-next::after {
+  font-size: 1.25rem;
+}
+.kitchen_thumb .swiper-button-prev {
+  left: -1.25rem;
+  display: none;
+}
+.kitchen_thumb .swiper-button-next {
+  right: -1.25rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .kitchen {
+    background-color: #f6f6f6;
+    padding: 4.125rem 0.9375rem;
+  }
+  .kitchen .title_block {
+    margin-bottom: 1.25rem;
+  }
+  .kitchen_wrap {
+    position: relative;
+  }
+  .kitchen_banner {
+    position: relative;
+  }
+  .kitchen_banner--item {
+    aspect-ratio: 343/384;
+  }
+  .kitchen_banner--item img {
+    width: 100%;
+    height: 100%;
+    -webkit-object-fit: cover;
+    object-fit: cover;
+  }
+  .kitchen_pot--item {
+    width: 1rem;
+    height: 1rem;
+  }
+  .kitchen_pot--item .pot-but svg {
+    width: 50%;
+    height: 50%;
+  }
+  .kitchen_pot--item .pot-card {
+    display: none;
+  }
+  .kitchen_pots--mobile {
+    width: calc(100% - 0.9375rem);
+    margin: 0 auto;
+    margin-top: -6.25rem;
+    z-index: 4;
+    position: relative;
+  }
+  .kitchen_pots--mobile .swiper {
+    padding-bottom: 2.5rem;
+    overflow: visible;
+  }
+  .kitchen_pots--mobile .swiper-wrapper .swiper-slide {
+    background-color: #fff;
+    padding: 1rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .kitchen_pots--mobile .kitchen_pot {
+    display: block;
+  }
+  .kitchen_pots--mobile .summary {
+    display: flex;
+    justify-content: space-between;
+    color: #242420;
+    font-size: 0.875rem;
+  }
+  .kitchen_pots--mobile .summary-name {
+    font-weight: 600;
+  }
+  .kitchen_pots--mobile .summary-number {
+    font-weight: 400;
+  }
+  .kitchen_pots--mobile .card {
+    display: flex;
+    padding: 1rem 0;
+    border-top: 1px solid #D0D5DD;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  .kitchen_pots--mobile .card:nth-child(2) {
+    border: none;
+  }
+  .kitchen_pots--mobile .card-img {
+    flex: 0 0 4rem;
+    max-width: 4rem;
+    height: auto;
+    margin: 0;
+  }
+  .kitchen_pots--mobile .card-txt {
+    padding-left: 1rem;
+  }
+  .kitchen_pots--mobile .card-txt h3,
+  .kitchen_pots--mobile .card-txt .price {
+    text-align: left;
+    font-size: 0.875rem;
+  }
+  .kitchen_pots--mobile .card-txt .price {
+    margin-top: 0;
+  }
+}
