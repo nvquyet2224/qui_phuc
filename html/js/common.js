@@ -236,6 +236,12 @@ function navClick() {
       if (document.querySelector(".nav-item.current")) {
         document.querySelector(".nav-item.current").classList.remove("current");
       }
+      if (document.querySelector(".side-item.active")) {
+        document.querySelector(".side-item.active").classList.remove("active");
+      }
+      if (document.querySelector(".item-lv2.active")) {
+        document.querySelector(".item-lv2.active").classList.remove("active");
+      }
     } else {
       document.querySelector("body").classList.add("no-scroll");
       menu.classList.add("open-menu");
@@ -255,48 +261,58 @@ function navClick() {
       
       if (item) {
         item.classList.add("current");
-        const dataPage = item.getAttribute('data-page');
+        const dataPage = item.getAttribute('data-page') || '';
         body.classList.add("no-scroll");
         menu.classList.add("open-menu");
-      }
-
-      //close
-      const target = e.target.closest(".back-menu");
-      if (target) {
-        if (document.querySelector(".nav-item.current")) {
-          document
-            .querySelector(".nav-item.current")
-            .classList.remove("current");
+        // Open sub menu if match
+        if(dataPage) {
+          document.querySelector('.side .side-item[data-page='+ dataPage +']').classList.add('active');
         }
       }
 
     });
   }
+
   const side = document.querySelector(".side");
   if(side) {
     side.addEventListener("click", (e) => {
       const sideItem = e.target.closest(".side-item");
 
       if(sideItem) {
-        const oldItem = document.querySelector('.side .side-item.active');
-        if(oldItem) {
-          oldItem.classList.remove('active');
+        const oldSideItem = document.querySelector('.side .side-item.active');
+        if(oldSideItem) {
+          oldSideItem.classList.remove('active');
         }
         sideItem.classList.add('active');
       }
 
-      const iconNext = e.target.closest(".dropdown-menu--title");
-      if(iconNext) {
-        const oldNext = document.querySelector('.side-menu .dropdown-menu--subitem.active');
-        const oldWrap = document.querySelector('.side-menu .push-content--wrap.active');
-        if(oldNext) {
-          oldNext.classList.remove('active');
+      const dropdownMenu = e.target.closest(".dropdown-menu--title");
+      if(dropdownMenu) {
+        const itemLv2 = document.querySelector('.side-menu .item-lv2.active');
+        if(itemLv2) {
+          itemLv2.classList.remove('active');
         }
-        if(oldWrap) {
-          oldWrap.classList.remove('active');
-        }
-        iconNext.parentNode.classList.add('active');
+        dropdownMenu.parentNode.classList.add('active');
+      }
 
+      //back menu LV1
+      const backLv1 = e.target.closest(".back-lv1");
+      if(backLv1) {
+        if(document.querySelector('.side-item.active')) {
+          document.querySelector('.side-item.active').classList.remove('active');
+        }
+        if(document.querySelector('.item-lv2.active')) {
+          document.querySelector('.item-lv2.active').classList.remove('active');
+        }
+      }
+
+      //back menu LV2
+      const backLv2 = e.target.closest(".back-lv2");
+      if(backLv2) {
+        console.log('__aaad');
+        if(document.querySelector('.item-lv2.active')) {
+          document.querySelector('.item-lv2.active').classList.remove('active');
+        }
       }
 
       //close menu
