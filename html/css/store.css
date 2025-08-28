@@ -1083,6 +1083,9 @@ input[type=number] {
   -webkit-transition: transform 0.3s linear;
   transition: transform 0.3s linear;
 }
+.form_caption sup {
+  color: #FF0000;
+}
 .form .field_error {
   display: none;
 }
@@ -1116,7 +1119,7 @@ input[type=number] {
 .form .select-header {
   height: 100%;
   padding: 0 1rem;
-  border: 1px solid #D0D5DD;
+  border: 1px solid #d0d5dd;
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }

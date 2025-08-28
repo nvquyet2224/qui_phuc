@@ -2100,6 +2100,17 @@ button.swiper-pagination-bullet {
   margin-bottom: 5.3125rem;
   padding-left: 2.5rem;
 }
+.collection_content .swiper-slide {
+  overflow: hidden;
+  height: auto;
+}
+.collection_content .swiper-slide span {
+  display: inline-flex;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .collection_product {
   position: relative;
 }
@@ -2144,7 +2155,7 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 .collection-nav .collectionNavSlider {
-  width: 7.5rem;
+  width: 12.5rem;
 }
 .collection-nav .collectionNavSlider .swiper-slide {
   text-align: center;

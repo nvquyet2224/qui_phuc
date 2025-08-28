@@ -97,6 +97,9 @@
 .login-form .side-sigup .form--item .title {
   margin-top: 0;
 }
+.login-form .side-sigup .login-form-btn {
+  margin-top: 1.5rem;
+}
 .login-form-btn {
   height: 3rem;
   display: flex;
