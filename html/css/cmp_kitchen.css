@@ -93,7 +93,7 @@
   position: absolute;
   left: var(--left, 0);
   top: var(--top, 0);
-  z-index: 4;
+  z-index: var(--zindex, 4);
   cursor: pointer;
   width: 2.25rem;
   height: 2.25rem;
