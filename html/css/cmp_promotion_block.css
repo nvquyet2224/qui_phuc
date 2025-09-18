@@ -55,6 +55,10 @@
 .products-list .product-txt {
   flex-grow: 1;
 }
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 @media screen and (max-width: 1023px) {
   .products {
@@ -75,6 +79,9 @@
   }
   .products-list .action .link-but {
     width: 100%;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   .products .product-img {
     margin-bottom: 1.25rem;
