@@ -2091,7 +2091,11 @@ button.swiper-pagination-bullet {
   bottom: 3.625rem;
   z-index: 3;
 }
+.whatnow_thumb .swiper-slide {
+  height: auto;
+}
 .whatnow_thumb .card {
+  height: 100%;
   padding: 1.5625rem;
   position: relative;
   border: 2px solid var(--global-color);
