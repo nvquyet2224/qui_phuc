@@ -76,6 +76,11 @@ input[type=number] {
   height: 7.5rem;
 }
 
+.oneline-title {
+  display: inline-flex;
+  gap: 11px;
+}
+
 .input-txt--upload {
   line-height: 3rem;
   background: url(../images/icon-link.svg) no-repeat calc(100% - 1rem) center;
@@ -294,7 +299,7 @@ input[type=number] {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   color: #fff;
-  background-color: #FF0000;
+  background-color: #ff0000;
   display: inline-flex;
   align-items: center;
   justify-content: center;

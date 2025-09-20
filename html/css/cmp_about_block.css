@@ -37,16 +37,22 @@
 }
 .history_wrap .year-detail .detail {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: auto;
-  opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .history_wrap .year-detail .detail.current {
   position: relative;
   opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
   pointer-events: all;
 }
 
