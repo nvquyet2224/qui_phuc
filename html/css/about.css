@@ -1694,6 +1694,18 @@ button.swiper-pagination-bullet {
 .history_wrap .year-list .nav-overlay span::before {
   display: none;
 }
+.history_wrap .year-list .nav-overlay span {
+  color: #7BC4FE;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.history_wrap .year-list .nav-overlay span:hover {
+  color: #fff;
+}
+.history_wrap .year-list .nav-overlay li.current span {
+  color: #fff;
+  font-size: 1.5rem;
+}
 .history_wrap .year-detail {
   position: relative;
   flex: 0 0 calc(100% - 15.9375rem);
@@ -1750,6 +1762,9 @@ button.swiper-pagination-bullet {
     font-size: 1rem;
     padding: 0.875rem 0;
     display: inline-flex;
+  }
+  .history_wrap .year-list .nav-overlay li.current span {
+    font-size: 1.25rem;
   }
   .history_wrap .year-detail {
     flex: 0 0 calc(100% - 6.25rem);
