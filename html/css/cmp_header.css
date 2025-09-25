@@ -1296,6 +1296,9 @@
   flex: 0 0 5.5rem;
   max-width: 5.5rem;
   height: auto;
+  line-height: 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 .side .push-content--item .image-push-wrapper img {
   width: 100%;

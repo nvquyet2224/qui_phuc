@@ -4205,7 +4205,6 @@ a.ui-button:active,
   }
   .categories_content-products {
     width: 100%;
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
     border-bottom: none;
   }
   .categories_content-products .products-list {
@@ -4214,6 +4213,7 @@ a.ui-button:active,
   .categories_content-products .products-list .product {
     padding: 0.5rem 0.5rem 0.75rem 0.5rem;
     border-left: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
   }
   .categories_content-products .products-list .product-img {
     width: 7.4375rem;

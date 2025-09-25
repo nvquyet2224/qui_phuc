@@ -1709,8 +1709,17 @@ button.swiper-pagination-bullet {
   }
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .products-grid--item .product {
+    border-bottom: none;
+  }
+  .products-grid--item:nth-child(2n+1) .product {
+    border-left: none;
   }
   .products .product-img {
+    width: 7.4375rem;
+    height: 7.3125rem;
     margin-bottom: 1.25rem;
   }
 }
